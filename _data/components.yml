@@ -25,24 +25,28 @@
     #   img: "/img/components/logo.png"
 
     - subtitle: "Color"
-      subhref: "visual-style/color"
+      subhref: "/visual-style/color"
       img: "/img/components/color.png"
 
     - subtitle: "Typography"
-      subhref: "visual-style/typography"
+      subhref: "/visual-style/typography"
       img: "/img/components/typography.png"
 
     - subtitle: "Size and Spacing Units"
-      subhref: "visual-style/size-and-space"
+      subhref: "/visual-style/size-and-space"
       img: "/img/components/size-and-space.png"
 
     - subtitle: "Grid, Layout, and Responsive Web Design"
-      subhref: "visual-style/grid"
+      subhref: "/visual-style/grid"
       img: "/img/components/grid.png"
 
     - subtitle: "CSS Utilities"
-      subhref: "visual-style/utilities"
+      subhref: "/visual-style/utilities"
       img: "/img/components/utilities.png"
+
+    - subtitle: "Icons"
+      subhref: "/visual-style/icons"
+      img: "/img/components/icons.png"
 
 - title: "Components"
   href: "/components"

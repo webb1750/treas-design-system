@@ -118,6 +118,18 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
   <button class="treas-btn treas-btn--primary treas-btn--large" type="button">Label</button>
 </div>
 
+## With Icons
+Buttons can include icons for more decorative styling. For a list of available icons, to to the [icons list](/visual-style/icons) page. 
+
+```html
+<button class="treas-btn treas-btn--ghost treas-btn--small" type="button">
+    <img class="treas-btn__icon treas-btn__icon--small" src="/img/icons/icon-launch.svg" alt="launch icon" />Label
+</button>
+```
+<div class="ds-preview">
+    <button class="treas-btn treas-btn--ghost treas-btn--small" type="button"><img class="treas-btn__icon treas-btn__icon--small" src="/img/icons/icon-launch.svg" alt="launch icon" />Label</button>
+</div>
+
 ## Usage
 
 ### Use When
