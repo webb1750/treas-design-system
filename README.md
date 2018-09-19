@@ -3,10 +3,10 @@
 ## Requirements
 
 The Treasury Design System site is built using Jekyll. You will need to the following installed on your machine before you can begin:
-* Ruby 2.2.5 or above
+* gRuby 2.2.5 or above
 * Install [Jekyll](https://jekyllrb.com/docs/installation/)
 
-More useful links
+### More useful links
 [Installing Ruby on Mac](https://jekyllrb.com/docs/installation/macos/)
 
 ## How to start the site
