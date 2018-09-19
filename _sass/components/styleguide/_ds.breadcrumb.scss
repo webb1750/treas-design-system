@@ -1,0 +1,58 @@
+.ds-breadcrumb {
+
+    &__list {
+      margin: 0 0 $size-small;
+      padding: 0;
+    }
+  
+    &__item {
+  
+      margin: 0;
+      display: inline-block;
+      font-size: 1.4rem;
+
+      @include breakpoint(M) {
+        font-size: 1.7rem;
+      }
+  
+      &:before,
+      &:after {
+        content: '';
+        display: none;
+        margin: 0;
+      }
+  
+      &:after {
+        content: '/';
+        display: inline-block;
+        margin-right: $size-base;
+        margin-left: $size-base;
+      }
+  
+      &:last-child {
+  
+        &:after {
+          display: none;
+        }
+  
+      }
+  
+      &:only-child {
+        display: none;
+      }
+  
+    }
+  
+    &__link {
+  
+      color: $color-blue;
+      text-decoration: none;
+  
+      &:visited,
+      &:hover {
+        color: $color-blue;
+      }
+  
+    }
+  
+  }

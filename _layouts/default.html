@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="{% if page.url == '/' %}ds-home{% endif %}">
+
+    {% include header.html %}
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        {{ content }}
+      </div>
+    </main>
+    <script src="{{ base.url | prepend: site.url }}/js/jquery.min.js"></script>
+    <script src="{{ base.url | prepend: site.url }}/js/treas.js"></script>
+  </body>
+
+</html>

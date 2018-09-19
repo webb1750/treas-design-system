@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include breadcrumb.html %}
+
+<h1 class="ds-page-title" id="article-title">
+  {{ page.title }}
+  {% if page.title_label %}
+    <a class="fsa-label fsa-label--warning" href="#javascript-guidance">{{ page.title_label }}</a>
+  {% endif %}
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    {% if page.jump_menu %}
+      <div id="jump-target">
+          
+      </div>
+    {% endif %}
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      {% if page.intro %}
+      <p class="treas-text--lead">{{ page.intro }}</p>
+      {% endif %}
+
+      {{ content }}
+
+    </article>
+
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        {% for link in site.data.components %}
+  
+          {% assign activeClassName = nil %}
+          {% assign ariaCurrent = nil %}
+  
+          {% if page.url contains link.href %}
+            {% assign activeClassName = 'treas-main-nav__list-item--active' %}
+            {% assign ariaCurrent = 'aria-current="true"' %}
+          {% endif %}
+  
+          {% unless link.exclude_from_nav %}
+            <li class="treas-main-nav__list-item {% if forloop.first %}treas-main-nav__list-item--first{% endif %} {% if forloop.last %}treas-main-nav__list-item--last{% endif %} {{ activeClassName }}">
+              <a class="treas-main-nav__link" href="{{ link.href | prepend: site.baseurl }}" {{ ariaCurrent }}>{{ link.title }}</a>
+            </li>
+          {% endunless %}
+  
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>

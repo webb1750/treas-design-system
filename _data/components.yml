@@ -1,0 +1,100 @@
+- title: "Home"
+  href: "/"
+  exclude_from_nav: true
+
+- title: "Getting Started"
+  href: "/getting-started"
+  exclude_from_nav: true
+  # subcategories:
+  #
+  #   - subtitle: "Using Assets"
+  #     subhref: "getting-started/using-assets"
+  #
+  #   - subtitle: "Contributing"
+  #     subhref: "getting-started/contributing"
+  #
+  #   - subtitle: "License"
+  #     subhref: "getting-started/license"
+
+- title: "Visual Style"
+  href: "/visual-style"
+  subcategories:
+
+    # - subtitle: "Logo"
+    #   subhref: "visual-style/logo"
+    #   img: "/img/components/logo.png"
+
+    - subtitle: "Color"
+      subhref: "visual-style/color"
+      img: "/img/components/color.png"
+
+    - subtitle: "Typography"
+      subhref: "visual-style/typography"
+      img: "/img/components/typography.png"
+
+    - subtitle: "Size and Spacing Units"
+      subhref: "visual-style/size-and-space"
+      img: "/img/components/size-and-space.png"
+
+    - subtitle: "Grid, Layout, and Responsive Web Design"
+      subhref: "visual-style/grid"
+      img: "/img/components/grid.png"
+
+    - subtitle: "CSS Utilities"
+      subhref: "visual-style/utilities"
+      img: "/img/components/utilities.png"
+
+- title: "Components"
+  href: "/components"
+  subcategories:
+
+    - subtitle: "Header: U.S. Government Banner"
+      subhref: "/components/gov-banner"
+      img: "/img/components/us-gov-banner.png"
+      imgalt: "U.S. Government Banner"
+
+    - subtitle: "Header: Application"
+      subhref: "/components/header-app"
+      img: "/img/components/header-app.png"
+      imgalt: "Treasury Header"
+
+    - subtitle: "Header: Global Nav"
+      subhref: "/components/top-nav"
+      img: "/img/components/top-nav.png"
+      imgalt: "Global Navigation"
+
+    - subtitle: "Breadcrumbs"
+      subhref: "/components/breadcrumbs"
+      img: "/img/components/breadcrumbs.png"
+
+    - subtitle: "Footer"
+      subhref: "/components/footer"
+      img: "/img/components/footer.png"
+
+    - subtitle: "Buttons"
+      subhref: "/components/buttons"
+      img: "/img/components/buttons.png"
+
+    - subtitle: "Text Input"
+      subhref: "/components/text-input"
+      img: "/img/components/text-input.png"
+
+    - subtitle: "Textarea"
+      subhref: "/components/textarea"
+      img: "/img/components/textarea.png"
+
+    - subtitle: "Checkbox"
+      subhref: "/components/checkbox"
+      img: "/img/components/checkbox.png"
+
+    - subtitle: "Radio"
+      subhref: "/components/radio"
+      img: "/img/components/radio.png"
+
+    - subtitle: "Select"
+      subhref: "/components/select"
+      img: "/img/components/select.png"
+
+    - subtitle: "Tables"
+      subhref: "/components/tables"
+      img: "/img/components/tables.png"

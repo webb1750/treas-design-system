@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  main {
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  body {
+    background-color: #f8fafc;
+  }
+  .ds-body {
+  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ($site-max-width + 24px);
+    padding: $size-default;
+  
+    @include breakpoint(L) {
+      margin-top: $size-large;
+    }
+  
+  }
+
+  .ds-page-title {
+
+    margin: 0;
+ 
+    @include breakpoint(L) {
+      border-bottom: 1px solid $color-gray-lighter;
+      padding-bottom: 1rem;
+    }
+  
+  }
+
+  .ds-article h2[id] {
+    border-bottom: 2px solid $color-gray-lighter;
+    padding-bottom: 4px;
+    margin-top: 3rem;
+}
+
+.ds-article h3 {
+    font-family: $font-sans;
+    font-weight: 700;
+}
+
+.ds-article > ul li {
+    margin-bottom: .5em;
+}
+
+.ds-preview {
+  padding: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+
+    &--dark {
+      background-color: #CCC;
+    }
+}

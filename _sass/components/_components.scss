@@ -1,0 +1,332 @@
+
+
+.img-fluid
+ {
+   max-width: 100%;
+   height: auto;
+ }
+
+/**
+ * Accordions are a list of headers that can be clicked to hide or reveal additional content.
+ *
+ * #### Accessibility
+ * - Code header areas in the accordion as `<button>` so that they are usable with both screen readers and the keyboard.
+ * - Buttons should state if they are expanded with `aria-expanded="true"`. The `aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
+ * - Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element's id.
+ * - Each content area will have its `aria-hidden` attribute set to either `true` or `false` by the component, depending on its corresponding button's `aria-expanded` attribute.
+ * 
+ * @section Accordions
+ * @page Components
+ * @example
+ * <ul class="usdt-accordion-bordered">
+ *  <li>
+ *    <button class="usdt-accordion-button" aria-expanded="true" aria-controls="nav1">Accordion Button</button>
+ *    <div id="nav1" class="usdt-accordion-content">My accordion content goes here.</div>
+ *  </li>
+ *  <li>
+ *    <button class="usdt-accordion-button" aria-expanded="false" aria-controls="nav2">Accordion Button 2</button>
+ *    <div id="nav2" class="usdt-accordion-content" aria-hidden="true">My accordion content goes here.</div>
+ *  </li>
+ * </ul>
+ */
+
+// Accordion
+.usdt-accordion,
+.usdt-accordion-bordered {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: $color-black-light;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  & > li {
+    background-color: $color-gray-lightest;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .usdt-accordion-content {
+    background-color: #ffffff;
+    overflow: auto;
+    padding: 1rem 1rem;
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+  &.app-secondary {
+    > li {
+      @include box-shadow;
+      background-color: #fff;
+      margin-bottom: 2rem;
+    }
+    .usdt-accordion-button {
+      background-color: #fff;
+      border-color: transparent;
+      color: $color-gray-dark;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    .usdt-accordion-content {
+      padding: 1rem 0rem;
+      margin-left:2rem;
+      margin-right: 2rem;
+      border-top: solid 1px $color-gray-lightest;
+      @media screen and (max-width: 767px){
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+.usdt-accordion-bordered {
+  .usdt-accordion-content {
+    border-bottom: 3px solid $color-gray-lightest;
+    border-left: 3px solid $color-gray-lightest;
+    border-right: 3px solid $color-gray-lightest;
+  }
+}
+.usdt-accordion-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: $color-gray-lightest;
+  background-image: url(../assets/img/minus.svg);
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  color: $color-black-light;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.2rem 5.5rem 1.2rem 2rem;
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 0px;
+  &:hover {
+    background-color: $color-gray-lighter;
+  }
+  &[aria-expanded="false"] {
+    background-image: url(../assets/img/plus.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+  }
+}
+.usdt-option-menu {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  padding: 1rem;
+  top: 50%;
+  @include box-shadow;
+  li {
+    padding: .2rem;
+  }
+}
+
+.usdt-hero {
+  background: #fff;
+  @media screen and (min-width: 1200px){
+    padding-bottom:0px
+  }
+  h1 {
+    font-size: 2.85rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 1200px){
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+    }
+    @media screen and (max-width: 767px){
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+} 
+
+.usdt-user-info-card {
+  padding: 30px 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+  .user-avatar {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 10px;
+    img {
+      max-height: 72px;
+      max-width: 72px;
+    }
+  }
+  .user-name {
+    font-family: $font-serif;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 300;
+    display: block;
+  }
+  .user-title {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+    margin-top: 8px;
+  }
+}
+.usdt-app-logo {
+  flex: 0 0 50%;
+  @media screen and (min-width: $medium-screen){
+    flex: 0 0 25%;
+  }
+}
+.usdt-app-action-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li {
+    display: flex;
+    align-items: center;
+    padding:0.5rem 1rem;
+    line-height: 1.25;
+    font-weight: 300;
+    @media screen and (max-width:767px){
+      display: block;
+    }
+
+    &:nth-child(odd){
+      background-color: $color-gray-lightest-lite;
+    }
+  }
+  .item-type-icon {
+    margin-right: 0.75rem;
+    font-size: 1.3rem;
+    color: $color-cool-blue;
+  }
+  .action-icons {
+    margin-left: auto;
+    display: flex;
+    padding-left: 1rem;
+    @media screen and (max-width:767px){
+      margin-top: 0.75rem;
+      padding-left: 0;
+    }
+  }
+}
+
+.app-action-heading {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.usdt-section-toggle {
+  text-decoration: none;
+  color: $color-black-light;
+  .icon {
+    margin-right: 0.5rem;
+  }
+  &[aria-expanded="false"] {
+    .toggle-text:before{
+      content: 'Show ';
+      font-family: $font-sans;
+    }
+    .icon:before {
+      content: "\e90a";
+    }
+  }
+  &[aria-expanded="true"] .toggle-text:before{
+    content: 'Hide ';
+    font-family: $font-sans;
+  }
+}
+
+.usdt-section-break {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  &-bottom {
+    margin-top:0;
+    margin-bottom: 2rem;
+  }
+  &-top{
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.usdt-background-overlay::before {
+  content:'';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: url('../assets/img/background-blue-phoneglasses.jpg') no-repeat 0 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.usdt-card {
+  background-color: #fff;
+}
+
+.usdt-login-panel {
+  padding: 1rem 2rem;
+  @media screen and (min-width:$screen-md){
+    padding: 3rem 4rem;
+  }
+}
+
+.usdt-overview-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
+  
+  &-item {
+    width: calc(50% - 1rem);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .item-icon {
+      width: 100px;
+      height: 100px;
+      margin-right: 1.4rem;
+      flex-shrink: 0;
+    }
+    .item-title {
+      font-size: 2.20rem;
+      line-height: 2.20rem;
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 300;
+      margin-bottom: .875rem;
+      margin-left: -2px;
+      white-space: nowrap;
+    }
+    .list-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin:0;
+        font-size: .875rem;
+        color: $color-gray;
+        line-height: 1.5;
+        max-width: 310px;
+      }
+    }
+  }
+
+}

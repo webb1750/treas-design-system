@@ -1,0 +1,200 @@
+
+/* Footer */
+.treas-footer {
+    background-color: $color-blue-darkest-2;
+    padding: 2.8rem 0;
+    color: #fff;
+    &__wrap {
+        @include treas-grid-row(space-between, center);
+    }
+    &__list {
+        @include reset-ul;
+        @include flex;
+        margin-bottom: 0.4rem;
+        &:not[first-of-type] {
+            margin-top: 0.4rem;
+        }
+    }
+    &__list-item {
+        @include reset-li;
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-right: 1.5rem;
+    }
+    &__lang-link {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.9;
+        font-size: 1.4rem;
+        font-weight: 300;
+
+        &::after {
+            content:' | ';
+            padding: 0 0.5rem;
+            color: #fff;
+        }
+    }
+    &__plugin-link {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        font-size: 1.2rem;
+        font-weight: 300;
+        &::after {
+            content:', ';
+            padding-right: 0.5rem;
+            color: #fff;
+        }
+    }
+    &__list-item:last-of-type
+    {   
+        .treas-footer__link {
+            margin-right: 0;
+        }
+        .treas-footer__lang-link::after,
+        .treas-footer__plugin-link::after {
+            content: none;
+            padding: 0;
+        }
+    }
+    &__plugins {
+        font-style: italic;
+        .treas-footer__list-item:first-of-type::before {
+            content: 'Required plug-ins: ';
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.6;
+        }
+    }
+}
+
+.usdt-secondary-footer {
+    background-color: $color-blue-darkest-2;
+    padding: 2rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+   
+    &.footer-push {
+        margin-top: 2rem;
+    }
+    &.footer-thin {
+        padding: 1rem 1.75rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.25rem 0;
+        padding:0;
+        li {
+            list-style: none;
+
+            &::after {
+                content: ' \2022 ';
+                padding: 0 5px;
+                color: #fff;
+            }
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                content:'';
+                padding:0;
+                }
+            }
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+            opacity: 0.6;
+            }
+        a:hover {
+            text-decoration: underline;
+            }
+        }
+
+        &.lang-menu {
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                &::after {
+                    padding: 0 5px;
+                    content: ' | ';
+                    color: #fff;
+
+                }
+                &:last-child::after {
+                    content: '';
+                    padding: 0;
+                }
+                a {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    .site-plugins {
+        opacity: 0.6;
+        font-style: italic;
+        color: #fff;
+        margin-top:0.75rem;
+
+        a, a:hover, a:visited {
+            color:#fff;
+        }
+    }
+    .social-icons {
+        text-align: right;
+        display:flex;
+        align-items: center;
+        align-content: right;
+        justify-content: flex-end;
+
+        ul {
+            margin: 0;
+            padding: 0;
+                    
+            li {
+                margin: 0;
+                vertical-align: middle;
+                display: inline-block;
+
+                a {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    opacity: 1;
+                    width: 36px;
+                    height: 36px;
+                    display:block;
+                    
+                    span {
+                        display: none;
+                    }
+                }
+                &.twitter a {
+                    background: url(../assets/img/twitter.png) 0 -36px no-repeat;
+                    &:hover {
+                        background-position: 0 1px!important;
+                    }
+                }
+                &.facebook a {
+                    background: url(../assets/img/facebook.png) 0 -36px no-repeat;
+                    &:hover {
+                        background-position: 0 0px!important;
+                    }
+                }
+            }
+        
+        }
+
+    }
+
+}

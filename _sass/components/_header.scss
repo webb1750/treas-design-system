@@ -1,0 +1,131 @@
+
+/* Treasury Header */
+
+.treas-header {
+  background: $color-primary;
+  position: relative;
+  z-index: 100;
+
+  &__wrap {
+    @include treas-grid-row(space-between, center);
+  }
+  &__title {
+    color: #ffffff;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-decoration: none;
+
+    @include breakpoint(L) {
+      padding: 2rem 0;
+    }
+  }
+  &__logo {
+    height: 48px;
+    width: 48px;
+    margin-right: 0.6rem;
+  
+    @include breakpoint(L){
+      width: 64px;
+      height: 64px;
+      margin-right: 0.8rem;
+    }
+  }
+  &__name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: $font-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    @include breakpoint(S, down) {
+      max-width: 15ch;
+    }
+    @include breakpoint(M) {
+      font-size: 2.2rem;
+    }
+    @include breakpoint(L) {
+      font-size: 2.88rem;
+    }
+  }
+  &.treas-header--light {
+    background: #fff;
+    border-top: solid 1px $color-gray-lightest;
+    @include breakpoint(LAPTOP, down) {
+      box-shadow: 0 2px 8px -3px rgba(0,0,0,0.25);
+    }
+    .treas-header__name {
+      color: $color-primary;
+    }
+    // Burger menu color adjustment
+    .treas-burger-menu__line {
+      background-color: $color-primary;
+    }
+  }
+}
+
+
+
+/* US Government Official Site Banner */
+.treas-topbanner {
+  background: url(/img/superheader.png) center center no-repeat #fff;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+  
+  &__wrap {
+    @include treas-grid-row(space-between, center);
+  }
+  &__title {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: $color-gray;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+
+    @include breakpoint(S, down){
+      font-size: 1.1rem;
+    }
+  }
+  &__links {
+
+    @include breakpoint(M, down){
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      padding:0;
+      margin:0;
+      font-size: 1.3rem;
+      li {
+        @include reset-li(inline-block);
+        font-family: $font-serif;
+
+        a {
+          display: block;
+          text-align: center;
+          margin-left: 1.3rem;
+          padding: 1.1rem 1.4rem;
+          color: $color-gray-dark;
+          text-decoration: none;
+          transition: background-color .3s;
+          font-family: $font-serif;
+
+          &:hover, &:focus {
+            text-decoration: underline;
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
+  }
+  &__usa-flag-icon {
+    width: 21px;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+  }
+}

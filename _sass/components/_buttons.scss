@@ -1,0 +1,116 @@
+/*BUTTONS*/
+
+.treas-btn {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin:0;
+  border: 2px solid;
+  border-radius: 5rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  padding: 1.4rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .4s ease, background-color .4s ease, border-color .4s ease;
+  
+  // Add margin when chaining buttons together
+  + .treas-btn  {
+    margin-left: 0.6rem;
+  }
+
+  // When disabled
+  &:disabled {
+    opacity: .5;
+  }
+
+  // Button Variations
+  &--primary {
+    background-color: $color-primary;
+    color: white;
+    border-color: transparent;
+    &:hover, &:focus {
+      background-color: $color-primary-darker;
+    }
+    &:active {
+      border-color: $color-primary-darkest;
+    }
+  }
+  &--secondary {
+    background-color: $color-green;
+    border-color: transparent;
+    color: white;
+    &:hover, &:focus {
+      background-color: $color-green-darker;
+    }
+    &:active {
+      color: white;
+      border-color: $color-green-darkest;
+    }
+  }
+
+  &--ghost {
+    color: $color-primary;
+    background-color: white;
+    border: solid 2px $color-primary;
+    &:hover, &:focus {
+      color: $color-primary-darker;
+      border-color: $color-primary-darker;
+      background-color: white;
+    }
+    &:active {
+      color: $color-primary-darkest;
+      border-color: $color-primary-darkest;
+    }
+  }
+  &--ghost-secondary {
+    color: $color-green-darker;
+    background-color: white;
+    border: solid 2px $color-primary;
+    &:hover, &:focus {
+      color: $color-green-darkest;
+      border-color: $color-green-darkest;
+      background-color: white;
+    }
+    &:active {
+      color: $color-green-darkest;
+      border-color: $color-green-darkest;
+    }
+  }
+  &--square {
+    border-radius: 0;
+  }
+  &--small {
+    font-size: 1.5rem;
+    padding: 0.8rem 3.5rem;
+  }
+  &--large {
+    font-size: 2.1rem;
+    padding: 1.8rem 5.5rem;
+  }
+  &--inverse {
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    &:hover, &:focus {
+      opacity: 0.85;
+      color: white;
+      background: transparent;
+    }
+    &:active {
+      opacity: 0.7;
+      color: white;
+      background: transparent;
+    }
+  }
+  &--block {
+    width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+
+/* Navigation */
+
+.treas-main-nav {
+  background: $color-blue-darker;
+  @include breakpoint (LAPTOP, down){
+    position: absolute;
+    width: 100vw;
+    z-index: 99;
+    transform: translateY(-100%);
+    transition: all .45s ease;
+
+    &.show, &[aria-hidden="false"], &[aria-expanded="true"] {
+      transform: translateY(0%);
+      transition: all .45s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.24);
+    }
+  }
+  &__wrap {
+    @include treas-grid-row(space-between, center);
+    @include breakpoint (LAPTOP, down){
+      padding:0;
+    }
+  }
+  &__list {
+    @include reset-ul;
+    @include flex($align-middle: true, $space-between: false, $no-wrap: false);
+    flex-flow: row;
+    position: relative;
+    @include breakpoint (LAPTOP, down){
+      flex-flow: column;
+      width: 100%;
+    }
+  }
+  &__list-item {
+    @include reset-li;
+    margin-right: 5rem;
+    &:last-of-type {
+      margin-right: 0px;
+    }
+    @include breakpoint(LAPTOP, down) {
+      margin-right:0;
+      display: block;
+      width: 100%;
+      border-bottom: solid 1px rgba(255,255,255,0.1);
+    }
+  }
+  &__link {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+
+    @include breakpoint(LAPTOP, down) {
+      display: block;
+      width: 100%;
+      padding-left: 3.5vw;
+      padding-right: 3.5vw;
+    }
+
+    &::after {
+      transition: transform .3s ease-out,border-color .3s ease-out;
+      position: absolute;
+      display: block;
+      bottom: -1.6rem; // Same as link font size
+      left: 0;
+      right: 0;
+      width: 100%;
+      transform: scaleX(0);
+      border-top: 3px solid transparent;
+      content: '';
+      padding-bottom: inherit;
+    }
+
+    &:hover::after, &:focus::after, &.active::after, &[aria-current="true"]::after, &[aria-expanded="true"] {
+      border-top-color: $color-yellow;
+      transform: scaleX(1);
+    } 
+  }
+}
