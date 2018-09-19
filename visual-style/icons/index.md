@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 title: "Icons"
 intro: "Icons list is coming soon..."
 ---
