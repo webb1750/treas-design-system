@@ -11,7 +11,7 @@ jump_menu: true
   <button class="treas-btn treas-btn--secondary" type="button">Label</button>
   <button class="treas-btn treas-btn--ghost" type="button">Label</button>
   <button class="treas-btn treas-btn--inverse" type="button">Label</button>
-  <button class="treas-btn treas-btn--square treas-btn--small treas-btn--secondary" type="button">Label</button>
+  <button class="treas-btn treas-btn--rectangle treas-btn--small treas-btn--secondary" type="button">Label</button>
 </div>
 
 ## Variations
@@ -67,13 +67,14 @@ Each button variation can be modified with one or multiple states:
 ```html
 <button class="treas-btn treas-btn--[variation] treas-btn--[state]" type="button">Label</button>
 ```
-### Square 
+### Rectangle 
+In the following example, we chained two different buttons states to create a small rectangular shaped button.
 
 ```html
-<button class="treas-btn treas-btn--secondary treas-btn--square treas-btn--small" type="button">Label</button>
+<button class="treas-btn treas-btn--secondary treas-btn--rectangle treas-btn--small" type="button">Label</button>
 ```
 <div class="ds-preview">
-    <button class="treas-btn treas-btn--secondary treas-btn--square treas-btn--small" type="button">Label</button>
+    <button class="treas-btn treas-btn--secondary treas-btn--rectangle treas-btn--small" type="button">Label</button>
 </div>
 
 ### Full-width
@@ -96,7 +97,7 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
   <button class="treas-btn treas-btn--primary" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--secondary" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--ghost" type="button" disabled="disabled">Label</button>
-  <button class="treas-btn treas-btn--secondary treas-btn--square" type="button" disabled="disabled">Labels</button>
+  <button class="treas-btn treas-btn--secondary treas-btn--rectangle" type="button" disabled="disabled">Labels</button>
 </div>
 
 ### Small
