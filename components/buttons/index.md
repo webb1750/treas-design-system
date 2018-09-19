@@ -88,7 +88,7 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
   <button class="treas-btn treas-btn--primary" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--secondary" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--ghost" type="button" disabled="disabled">Label</button>
-  <button class="treas-btn treas-btn--secondary treas-btn--square" type="button" disabled="disabled">Label</button>
+  <button class="treas-btn treas-btn--secondary treas-btn--square" type="button" disabled="disabled">Labels</button>
 </div>
 
 ### Small
