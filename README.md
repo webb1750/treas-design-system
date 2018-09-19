@@ -20,7 +20,7 @@ jekyll serve
 
 ## Reuse of open-source style guides
 
-Much of the guidance in the U.S. Web Design System leans on open source designs, code, and patterns from other civic and government organizations, including:
+Much of the guidance in the Treasury Design System leans on open source designs, code, and patterns from other civic and government organizations, including:
 
 * U.S. Web Design Standards [Style Guide](https://designsystem.digital.gov/)
 * USDA Farm Service Agency Design System [Style Guide](http://usda-fsa.github.io/fsa-design-system/)
