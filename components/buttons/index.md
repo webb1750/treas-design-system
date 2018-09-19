@@ -67,6 +67,14 @@ Each button variation can be modified with one or multiple states:
 ```html
 <button class="treas-btn treas-btn--[variation] treas-btn--[state]" type="button">Label</button>
 ```
+### Square 
+
+```html
+<button class="treas-btn treas-btn--secondary treas-btn--square treas-btn--small" type="button">Label</button>
+```
+<div class="ds-preview">
+    <button class="treas-btn treas-btn--secondary treas-btn--square treas-btn--small" type="button">Label</button>
+</div>
 
 ### Full-width
 
