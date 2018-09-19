@@ -3,7 +3,7 @@
 ## Requirements
 
 The Treasury Design System site is built using Jekyll. You will need to the following installed on your machine before you can begin:
-* gRuby 2.2.5 or above
+* Ruby 2.2.5 or above
 * Install [Jekyll](https://jekyllrb.com/docs/installation/)
 
 ### More useful links
@@ -15,4 +15,5 @@ Run the following commands
 ```
 jekyll build
 jekyll serve
+
 ```
