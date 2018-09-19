@@ -18,7 +18,16 @@ jekyll serve
 
 ```
 
-# License
+## Reuse of open-source style guides
+
+Much of the guidance in the U.S. Web Design System leans on open source designs, code, and patterns from other civic and government organizations, including:
+
+* U.S. Web Design Standards [Style Guide](https://designsystem.digital.gov/)
+* USDA Farm Service Agency Design System [Style Guide](http://usda-fsa.github.io/fsa-design-system/)
+
+
+
+# Licenses and attribution
 As a work of the United States Government, this project is in the public domain within the United States.
 
 Additionally, we waive copyright and related rights in the work worldwide through the CC0 1.0 Universal public domain dedication.
