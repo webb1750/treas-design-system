@@ -15,7 +15,6 @@ Run the following commands
 ```
 jekyll build
 jekyll serve
-
 ```
 
 ## Reuse of open-source style guides

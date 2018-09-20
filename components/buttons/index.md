@@ -59,14 +59,6 @@ Buttons are styled with `class="treas-btn"`, modifiable with one or multiple `tr
   <button class="treas-btn treas-btn--inverse" type="button">Label</button>
 </div>
 
-
-## States
-
-Each button variation can be modified with one or multiple states:
-
-```html
-<button class="treas-btn treas-btn--[variation] treas-btn--[state]" type="button">Label</button>
-```
 ### Rectangle 
 In the following example, we chained two different buttons states to create a small rectangular shaped button.
 
@@ -76,6 +68,14 @@ In the following example, we chained two different buttons states to create a sm
 <div class="ds-preview">
     <button class="treas-btn treas-btn--secondary treas-btn--rectangle treas-btn--small" type="button">Label</button>
 </div>
+
+## States
+
+Each button variation can be modified with one or multiple states:
+
+```html
+<button class="treas-btn treas-btn--[variation] treas-btn--[state]" type="button">Label</button>
+```
 
 ### Full-width
 
@@ -118,16 +118,18 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
   <button class="treas-btn treas-btn--primary treas-btn--large" type="button">Label</button>
 </div>
 
-## With Icons
+## Decorative
 Buttons can include icons for more decorative styling. For a list of available icons, to to the [icons list](/visual-style/icons) page. 
 
 ```html
 <button class="treas-btn treas-btn--ghost treas-btn--small" type="button">
-    <img class="treas-btn__icon treas-btn__icon--small" src="/img/icons/icon-launch.svg" alt="launch icon" />Label
+    <span class="treas-btn__icon icon-launch"></span>Label
 </button>
 ```
 <div class="ds-preview">
-    <button class="treas-btn treas-btn--ghost treas-btn--small" type="button"><img class="treas-btn__icon treas-btn__icon--small" src="/img/icons/icon-launch.svg" alt="launch icon" />Label</button>
+    <button class="treas-btn treas-btn--ghost treas-btn--small" type="button">
+        <span class="treas-btn__icon icon-launch"></span>Label
+    </button>
 </div>
 
 ## Usage
