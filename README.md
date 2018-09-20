@@ -16,6 +16,7 @@ Run the following commands
 jekyll build
 jekyll serve
 ```
+Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of the U.S. Treasury Design System.
 
 ## Reuse of open-source style guides
 
