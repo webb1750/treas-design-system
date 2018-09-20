@@ -168,3 +168,17 @@ $breakpoints: (
   }
 }
 
+//@font-face
+// Bourbon Mixin for top notch webfont support: https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_font-face.scss
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+      font-family: $font-family;
+      src: url('#{$file-path}.eot'); //IE9 Compat Modes
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), //IE6-IE8
+           url('#{$file-path}.woff') format('woff'), //Modern Browsers
+           url('#{$file-path}.ttf') format('truetype'), //Safari, Android, iOS
+           url('#{$file-path}.svg##{$font-family}') format('svg'); //Old iOS devices
+      font-weight: $weight;
+      font-style: $style;
+  }
+}

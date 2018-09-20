@@ -7,6 +7,7 @@
 
 @import 'base/reset';
 @import 'base/508';
+@import 'base/fonts';
 @import 'base/typography';
 
 @import 'layout/layout';
@@ -27,4 +28,4 @@
 @import 'components/styleguide/ds.breadcrumb';
 @import 'components/styleguide/syntax-highlighting';
 
-@import '/fonts/treas-iconfont.css'
+@import '/fonts/treas-iconfont.css';
