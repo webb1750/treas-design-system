@@ -1,8 +1,8 @@
-# treas-design-system
+# U.S. Treasury Design System
 
 ## Requirements
 
-The Treasury Design System site is built using Jekyll. You will need to the following installed on your machine before you can begin:
+The U.S. Treasury Design System site is built using [Jekyll](https://jekyllrb.com). You will need to the following installed on your machine before you can begin:
 * Ruby 2.2.5 or above
 * Install [Jekyll](https://jekyllrb.com/docs/installation/)
 
