@@ -4,13 +4,10 @@ title: "Icons"
 intro: "Icons can help add a decorative style to buttons and other user interface elements."
 ---
 
-## Web App icons
-
 
 # <span class="icon-check-box ds-icon"></span> <span class="icon-chevron-down ds-icon"></span> <span class="icon-chevron-up ds-icon"></span> <span class="icon-dashboard ds-icon"></span> <span class="icon-edit ds-icon"></span> <span class="icon-heart ds-icon"></span> <span class="icon-heart-fill ds-icon"></span> <span class="icon-launch ds-icon"></span> <span class="icon-paper ds-icon"></span> <span class="icon-search ds-icon"></span> <span class="icon-star ds-icon"></span> <span class="icon-support ds-icon"></span> 
 
 ## Icon class names
-
 ### <span class="icon-check-box"></span> Check-box
 ```class="icon-check-box"```
 
