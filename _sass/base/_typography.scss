@@ -47,10 +47,12 @@ h6 {
 h1 {
   font-size: 4.2rem;
   font-weight: 300;
+  letter-spacing: -0.1rem;
 }
 h2 {
   font-size: 3rem;
   font-weight: 300;
+  letter-spacing: -0.1rem;
 }
 h3 {
   font-size: 2rem;
@@ -125,12 +127,15 @@ h6{
   font-size: 1rem;
 }
 
-.usdt-font-sans {
-  font-family: $font-sans !important;
+.treas-font {
+  &--sans {
+    font-family: $font-sans !important;
+  }
+  &--serif {
+    font-family: $font-serif !important;
+  }
 }
-.usdt-font-serif {
-  font-family: $font-serif !important;
-}
+
 
 .text-huge {
   font-size: 7rem;
