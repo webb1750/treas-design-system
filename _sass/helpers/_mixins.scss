@@ -182,3 +182,13 @@ $breakpoints: (
       font-style: $style;
   }
 }
+
+// Placeholder
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/* Form fields */
+.treas-input,
+.treas-textarea {
+    border: 1px solid $color-gray-light;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: $form-padding - 0.1 $form-padding $form-padding;
+    font-size: 1.7rem;
+    display: inline-block;
+    height: 3.9rem;
+
+    &--round {
+        border-radius: 5rem;
+        padding: $form-padding - 0.1 $form-padding + 0.5 $form-padding;
+    }
+    &--block {
+        width: 100%;
+        display: block;
+    }
+    &--small {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    &--large {
+        height: 4.8rem;
+        font-size: 2rem;
+        padding-left: 1.2rem;
+    }
+    &--error {
+        border-color: $color-red-dark;
+        box-shadow: 0 0 0 0.1rem $color-red-dark inset;
+        background: $color-red-lightest;
+    }
+    &--success {
+        border-color: $color-green;
+        box-shadow: 0 0 0 0.1rem $color-green inset;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.1rem $color-cool-blue-dark inset;
+    }
+    &:disabled {
+        background-color: $color-gray-lightest;
+        color: $color-gray-light;
+    }
+    @include placeholder {
+        color: $color-gray-medium;
+    }
+}
+
+.treas-select {
+    border: 1px solid $color-gray-light;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: $form-padding;
+    font-size: 1.7rem;
+}
