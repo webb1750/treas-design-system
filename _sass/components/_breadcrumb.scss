@@ -1,0 +1,44 @@
+/* Breadcrumb */
+.treas-breadcrumb {
+    background-color: $color-gray-light-alt;
+
+    &__nav {
+        @include treas-grid-row(space-between, center);
+    }
+    &__list {
+        @include reset-ul;
+        @include flex;
+    }
+    &__item {
+        @include reset-li;
+        padding: 1.2rem 0;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-right: 6px;
+        color: $color-gray-dark;
+        &::after {
+            content: " ";
+            background: url(/img/breadcrumb-arrow.png) center center no-repeat;
+            background-size: 6px 8px;
+            color: #9c9999;
+            display: inline-block;
+            width: 6px;
+            height: 8px;
+            margin-left: 2px;
+        }
+        &:last-child,
+        &:last-child .treas-breadcrumb__link {
+            color: $color-primary;
+        }
+        &:last-child::after {
+            content: none;
+            display: none;
+        }
+    }
+    &__link {
+        color: $color-gray-dark;
+        text-decoration: none;
+    }
+}
