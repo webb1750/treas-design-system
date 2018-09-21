@@ -115,8 +115,8 @@ Readonly fields do not have a `class="treas-input--[variation]"`, instead using 
 ### Don't Use
 
 * When the value user enter are limited in amount
-* When users are choosing from a specific set of options. Consider [select]({{ site.baseurl }}components/select/), [radio]({{ site.baseurl }}components/radio/), or [checkbox]({{ site.baseurl }}components/checkbox/).
-* When users need to enter multiple lines of content, consider the [textarea]({{ site.baseurl }}components/textarea/) element.
+* When users are choosing from a specific set of options. Consider [select](/components/select/), [radio](/components/radio/), or [checkbox](/components/checkbox/).
+* When users need to enter multiple lines of content, consider the [textarea](/components/textarea/) element.
 
 ## Accessibility
 
@@ -127,7 +127,7 @@ If you customize the text inputs, ensure they continue to meet the the accessibi
 
 ## General Guidance
 
-* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}components/textarea/) instead.
+* The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea](/components/textarea/) instead.
 * Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
 * Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, `type="tel"` will surface a [phone keyboard](http://html5doctor.com/html5-forms-input-types/#input-tel).
 * Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.
