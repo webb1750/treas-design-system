@@ -87,8 +87,3 @@ The Application Header shall use the following `class="treas-header"` and is mod
 ### Don't Use
 
 * The Application Header component on any area of the page except the top or just below the [U.S. Government Banner Component](/components/gov-banner).
-
-## General Guidance
-
-* The U.S. Government Banner should be positioned above the [Application Header Component](/components/header-app/) when paired together in an Treasury Application.
-* The U.S. Government Banner should not contain more than 5 links. 
