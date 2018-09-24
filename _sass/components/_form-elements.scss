@@ -26,7 +26,7 @@
     &--error {
         border-color: $color-red-dark;
         box-shadow: 0 0 0 0.1rem $color-red-dark inset;
-        background: $color-red-lightest;
+        background-color: $color-red-lightest;
     }
     &--success {
         border-color: $color-green;
@@ -278,4 +278,114 @@
   background-color: $color-primary;
   box-shadow: 0 0 0 1px $color-primary;
   opacity: .3;
+}
+
+// Select
+.treas-select {
+    appearance: none;
+    display: inline-block;
+    background-image: url('#{$image-path}/arrow-down-primary.svg');
+    background-position: right 1.2rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    position: relative;
+    top: -.1rem;
+    max-width: 100%;
+    line-height: 1;
+
+    padding:
+      ($form-padding - .2rem) // to achieve vertical alignment
+      ($form-padding * 4.5) // to prevent text beneath arrow
+      ($form-padding - .1rem) // to achieve vertical alignment
+      ($form-padding)
+    ;
+
+    @supports (-webkit-appearance: none) {
+        /* Webkit only */
+        -webkit-appearance: none;
+        padding-top: $form-padding - .1rem;
+      }
+    // IE 10 +
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+        // IE 10+ doesn't like the SVG for select arrows
+        background-image: url('#{$image-path}/arrow-down-primary.png');
+
+        // Equivalent of select { appearance: none; }
+        &::-ms-expand {
+        display: none;
+        }
+
+    }
+
+    &:focus {
+        border-color: $color-cool-blue-dark;
+        box-shadow: 0 0 0 1px $color-cool-blue-dark inset;
+    }
+
+    &:disabled {
+        background-color: $color-gray-lightest;
+        color: $color-gray-light;
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &--error {
+
+        border-color: $color-red-dark;
+        box-shadow: 0 0 0 0.1rem $color-red-dark inset;
+        background-color: $color-red-lightest;
+    
+        @include placeholder {
+          color: shade($color-gray, 20%);
+        }
+    
+        &:focus {
+          box-shadow: 0 0 0 .2rem $color-red-light inset;
+          border-color: transparent;
+        }
+    
+    }
+    &--success {
+        border-color: $color-green;
+        box-shadow: 0 0 0 0.1rem $color-green inset;
+    }   
+
+    &--large {
+        height: 4.8rem;
+        font-size: 2rem;
+        top: -.3rem;
+    }
+    &--small {
+        font-size: 1.5rem;
+        padding-top: $size-small - .4rem;
+        padding-bottom: $size-small + .1rem;
+
+        @supports (-webkit-appearance: none) {
+        padding-top: $form-padding - .1rem;
+        }
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        padding-top: $form-padding - .1rem;
+        }
+    }
+
+}
+
+.treas-select {    
+    &--round {
+        border-radius: 5rem;
+        padding-left: $form-padding + 0.4;
+        &.treas-select--large {
+            padding-top: $form-padding - 0.3;
+            padding-left: $form-padding + 1;
+            padding-right: $form-padding * 5.5;
+            background-size: 2rem;
+            background-position: right 1.5rem center;
+        }
+    }
 }
