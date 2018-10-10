@@ -102,3 +102,11 @@
     - subtitle: "Tables"
       subhref: "/components/tables"
       img: "/img/components/tables.png"
+
+    - subtitle: "Avatar"
+      subhref: "/components/avatar"
+      img: "/img/components/avatar.png"
+
+    - subtitle: "Tags"
+      subhref: "/components/tags"
+      img: "/img/components/tag.png"
