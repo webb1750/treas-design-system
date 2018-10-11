@@ -1,0 +1,25 @@
+/* STYLES FOR TAG COMPONENT */
+
+$tag-text: #366E96;
+$tag-bg: #e1ecf4;
+
+@mixin createTag($tag-text, $tag-bg) {
+  padding: 4px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: $small;
+  text-align: center;
+  text-transform: lowercase;
+  color: $tag-text;
+  background-color: $tag-bg;
+  margin: 10px 4px;
+  transition: all 0.4s;
+  &:hover, &:focus, &:active {
+    filter: brightness(85%);
+  }
+}
+
+.treas-tag {
+  @include createTag($tag-text, $tag-bg);
+}
