@@ -1,0 +1,147 @@
+.p4p-form--block {
+    margin: 5px 0;
+}
+
+h3.treas-list-heading {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.treas-form-col {
+    padding: 0 15px;
+}
+
+.treas-btn--delete {
+    background: transparent;
+    border-radius: 100%;
+    font-family: arial;
+    display: inline-block;
+    text-align: center;
+    border-color: #d3000d;
+    border-width: 2px;
+    color: #d3000d;
+    font-weight: 700;
+    font-size: 30px;
+    width: 32px;
+    line-height: 0;
+    height: 32px;
+    box-sizing: border-box;
+    border-style: solid !important;
+    margin-top: 32px;
+}
+
+
+.display-flex {
+    display: flex;
+    align-items: middle;
+}
+
+.treas-btn--secondary {
+    border-color: #4b803d !important;
+    color: #4b803d !important;
+    padding: 13px 32px;
+}
+
+
+.treas-btn--submit {
+    padding: 3rem 4.5rem;
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+
+.treas-date-picker input {
+    border-radius: 5rem;
+    padding: .6rem 1.3rem .7rem !important;
+    padding-left: 1.2rem;
+    border: 1px solid #aeb0b5;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.7rem;
+    height: auto;
+}
+
+.treas-date-picker button {
+    border-radius: 5rem;
+    padding: .6rem 1.3rem .7rem !important;
+    padding-left: 1.2rem;
+    border: 1px solid #aeb0b5;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.7rem;
+    height: auto;
+    border-left: none;
+}
+
+label.required:after {
+    content: ' *';
+    color: red;
+    font-size: 24px;
+    line-height: 0;
+    position:relative;
+    top:5px
+}
+
+.required-text {
+    color: red;
+    font-size: 24px;
+}
+
+.treas-record-picker {
+    border-radius: 5rem;
+    padding: .3rem 1.3rem .7rem;
+    padding-left: 1.2rem;
+    border: 1px solid #aeb0b5;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.7rem;
+    min-height: 39px;
+    max-height: 39px;
+    overflow: hidden;
+}
+
+.treas-record-picker .select2-choice {
+    border:none;
+    padding: 0;
+    display:block;
+    box-shadow:none !important;
+    background-color: transparent !important;
+    &:focus {
+        outline:none !important;
+    }
+}
+
+.treas-record-picker .select2-arrow b {
+    background-image: url("/sys_attachment.do?sys_id=84b7c157dbb6a30092f67d0e0f9619ef") !important;
+    background-position: right 0rem center !important;
+    background-repeat: no-repeat !important;
+    background-size: 1.5rem !important;
+}
+
+.treas-record-picker .select2-dropdown-open .select2-choice {
+    border-bottom-color: transparent;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    background-color: transparent;
+}
+
+.select2-container-active {
+    box-shadow: 0 0 0 0.1rem $color-cool-blue inset;
+    outline: 2px dotted #aeb0b5;
+    outline-offset: 3px;
+}
+
+.treas-select {
+    padding-top: 0.6rem;
+    background-image: url("/sys_attachment.do?sys_id=84b7c157dbb6a30092f67d0e0f9619ef") !important;
+}
+
+.treas-checkbox:checked + label::before,
+.treas-checkbox:checked + [type="hidden"] + label::before {
+    background-image: url('/sys_attachment.do?sys_id=d9ee4674db47670092f67d0e0f961951') !important;
+}
+
