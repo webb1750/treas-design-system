@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Breadcrumbs - U.S. Treasury Design System</title>
+    <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
+    
+    
+  
+  <link rel="stylesheet" href="/css/treas-design-system.css">
+  
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="http://localhost:4000/components/breadcrumbs/">
+    <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
+  
+</head>
+
+  <body class="">
+
+    
+<a class="skipnav" href="#primary-navigation">Skip to primary navigation</a>
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<!-- US Government Official Site Banner -->
+<section class="treas-topbanner">
+    <div class="treas-topbanner__wrap">
+        <div class="treas-topbanner__title">
+            <img class="treas-topbanner__usa-flag-icon" src="/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+        </div>
+    </div>
+</section>
+<!-- Application Header:Light -->
+<header class="treas-header treas-header--light">
+    <div class="treas-header__wrap">
+        <a class="treas-header__title" href="/" title="Home" aria-label="Home">
+            <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal"> 
+            <span class="treas-header__name">Treasury Design System</span>
+        </a>
+        <button class="treas-burger-menu" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+        </button>
+    </div>
+</header>
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
+            </li>
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
+            </li>
+          
+  
+        
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        
+<div class="ds-breadcrumb">
+    <ol class="ds-breadcrumb__list">
+      <li class="ds-breadcrumb__item">
+        <a href="/" class="ds-breadcrumb__link">Home</a>
+      </li>
+
+  
+  <li class="ds-breadcrumb__item">
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
+    </a>
+  
+
+  
+  
+
+  </ol>
+</div>
+
+
+<h1 class="ds-page-title" id="article-title">
+  Breadcrumbs
+  
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    
+      <div id="jump-target">
+          
+      </div>
+    
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      
+      <p class="treas-text--lead">Breadcrumbs are a navigation element used to help orient a user within an application, and enable quick access to a parent level.</p>
+      
+
+      <div class="ds-preview">
+  <div class="treas-breadcrumb">
+    <nav class="treas-breadcrumb__nav" aria-label="Breadcrumbs">
+      <ol class="treas-breadcrumb__list">
+        <li class="treas-breadcrumb__item">
+          <a href="#" class="treas-breadcrumb__link">Home</a>
+        </li>
+        <li class="treas-breadcrumb__item">
+          <a href="#" class="treas-breadcrumb__link">Level 1</a>
+        </li>
+        <li class="treas-breadcrumb__item">
+          <a href="#" class="treas-breadcrumb__link">Level 2</a>
+        </li>
+        <li class="treas-breadcrumb__item">
+          <a href="#" class="treas-breadcrumb__link">Level 3</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treas-breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__nav"</span> <span class="na">aria-label=</span><span class="s">"Breadcrumbs"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__list"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__link"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/level-1/"</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__link"</span><span class="nt">&gt;</span>Level 1<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/level-1/level-2/"</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__link"</span><span class="nt">&gt;</span>Level 2<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/level-1/level-2/level-3"</span> <span class="na">class=</span><span class="s">"treas-breadcrumb__link"</span><span class="nt">&gt;</span>Level 3<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>Displaying hierarchy.</li>
+  <li>The application structure is several levels deep.</li>
+  <li>You want to allow the User to navigate quickly to various levels within the application architecture without using the browser back button.</li>
+  <li>You want to help orient the User and provide contextual awareness within a process or application structure.</li>
+</ul>
+
+<h3 id="dont-use">Don’t Use</h3>
+
+<ul>
+  <li>To display History.</li>
+  <li>To reflect a multi-step process.</li>
+  <li>Within the page content as a hyperlink feature.</li>
+  <li>If the application is only one level deep or if the global navigation’s first level can be used.</li>
+</ul>
+
+<h2 id="general-guidance">General Guidance</h2>
+
+<ul>
+  <li>Breadcrumbs are marked up an an Ordered List (<code class="highlighter-rouge">&lt;ol&gt;</code>) as its order matters.</li>
+  <li>Breadcrumbs should be located just below the global navigation system and above the main content of the application.</li>
+  <li>Keep each crumb’s title brief but descriptive.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<ul>
+  <li>Note the use of the <code class="highlighter-rouge">&lt;nav&gt;</code> element and <code class="highlighter-rouge">aria</code> attributes to describe the type of navigation.</li>
+</ul>
+
+
+    </article>
+
+  </div>
+
+</div>
+      </div>
+    </main>
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/treas.js"></script>
+  </body>
+
+</html>

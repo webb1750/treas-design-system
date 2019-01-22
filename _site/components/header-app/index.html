@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Application Header - U.S. Treasury Design System</title>
+    <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
+    
+    
+  
+  <link rel="stylesheet" href="/css/treas-design-system.css">
+  
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="http://localhost:4000/components/header-app/">
+    <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
+  
+</head>
+
+  <body class="">
+
+    
+<a class="skipnav" href="#primary-navigation">Skip to primary navigation</a>
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<!-- US Government Official Site Banner -->
+<section class="treas-topbanner">
+    <div class="treas-topbanner__wrap">
+        <div class="treas-topbanner__title">
+            <img class="treas-topbanner__usa-flag-icon" src="/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+        </div>
+    </div>
+</section>
+<!-- Application Header:Light -->
+<header class="treas-header treas-header--light">
+    <div class="treas-header__wrap">
+        <a class="treas-header__title" href="/" title="Home" aria-label="Home">
+            <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal"> 
+            <span class="treas-header__name">Treasury Design System</span>
+        </a>
+        <button class="treas-burger-menu" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+        </button>
+    </div>
+</header>
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
+            </li>
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
+            </li>
+          
+  
+        
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        
+<div class="ds-breadcrumb">
+    <ol class="ds-breadcrumb__list">
+      <li class="ds-breadcrumb__item">
+        <a href="/" class="ds-breadcrumb__link">Home</a>
+      </li>
+
+  
+  <li class="ds-breadcrumb__item">
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
+    </a>
+  
+
+  
+  
+
+  </ol>
+</div>
+
+
+<h1 class="ds-page-title" id="article-title">
+  Application Header
+  
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    
+      <div id="jump-target">
+          
+      </div>
+    
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      
+      <p class="treas-text--lead">The Treasury Application Header should include the branding of your application name.</p>
+      
+
+      <!-- Site Header  -->
+<header class="treas-header">
+  <div class="treas-header__wrap">
+      <a class="treas-header__title" href="#">
+        <img class="treas-header__logo" src="/img/seal.svg" alt="U.S. Department of the Treasury seal" /> 
+        <span class="treas-header__name">U.S. Department of the Treasury</span>
+      </a>
+      <button class="treas-burger-menu" aria-expanded="false">
+        <span class="sr-only">MENU</span>
+        <span class="treas-burger-menu__line"></span>
+        <span class="treas-burger-menu__line"></span>
+        <span class="treas-burger-menu__line"></span>
+      </button>
+  </div>
+</header>
+
+<h2 id="variations">Variations</h2>
+
+<p>The Application Header shall use the following <code class="highlighter-rouge">class="treas-header"</code> and is modifiable with one variation <code class="highlighter-rouge">treas-header--light</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Site Header  --&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"treas-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treas-header__wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"treas-header__title"</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"treas-header__logo"</span> <span class="na">src=</span><span class="s">"/img/seal.svg"</span> <span class="na">alt=</span><span class="s">"U.S. Department of the Treasury seal"</span><span class="nt">&gt;</span> 
+       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-header__name"</span><span class="nt">&gt;</span>U.S. Department of the Treasury<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"treas-burger-menu"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>MENU<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div></div>
+
+<h3 id="light">Light</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Site Header  --&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"treas-header treas-header--light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treas-header__wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"treas-header__title"</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"treas-header__logo"</span> <span class="na">src=</span><span class="s">"/img/logo.svg"</span> <span class="na">alt=</span><span class="s">"U.S. Department of the Treasury seal"</span><span class="nt">&gt;</span> 
+       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-header__name"</span><span class="nt">&gt;</span>U.S. Department of the Treasury<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"treas-burger-menu"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>MENU<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"treas-burger-menu__line"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div></div>
+<header class="treas-header treas-header--light">
+  <div class="treas-header__wrap">
+    <a class="treas-header__title" href="/">
+       <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal" /> 
+       <span class="treas-header__name">U.S. Department of the Treasury</span>
+    </a>
+    <button class="treas-burger-menu" aria-expanded="false">
+        <span class="sr-only">MENU</span>
+        <span class="treas-burger-menu__line"></span>
+        <span class="treas-burger-menu__line"></span>
+        <span class="treas-burger-menu__line"></span>
+    </button>
+  </div>
+</header>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>An Treasury Application is viewable to a internal or public audience.</li>
+  <li>An Treasury Application needs to display the title and logo of the application.</li>
+</ul>
+
+<h3 id="dont-use">Don’t Use</h3>
+
+<ul>
+  <li>The Application Header component on any area of the page except the top or just below the <a href="/components/gov-banner">U.S. Government Banner Component</a>.</li>
+</ul>
+
+
+    </article>
+
+  </div>
+
+</div>
+      </div>
+    </main>
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/treas.js"></script>
+  </body>
+
+</html>
