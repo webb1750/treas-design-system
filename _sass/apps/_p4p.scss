@@ -121,7 +121,7 @@ label.required:after {
 }
 
 .treas-record-picker .select2-arrow b {
-    background-image: url("/sys_attachment.do?sys_id=84b7c157dbb6a30092f67d0e0f9619ef") !important;
+    background-image: url("arrow-down-primary.svg") !important;
     background-position: right 0rem center !important;
     background-repeat: no-repeat !important;
     background-size: 1.5rem !important;
@@ -142,11 +142,11 @@ label.required:after {
 
 .treas-select {
     padding-top: 0.6rem;
-    background-image: url("/sys_attachment.do?sys_id=84b7c157dbb6a30092f67d0e0f9619ef") !important;
+    background-image: url("arrow-down-primary.svg") !important;
 }
 
 .treas-checkbox:checked + label::before,
 .treas-checkbox:checked + [type="hidden"] + label::before {
-    background-image: url('/sys_attachment.do?sys_id=d9ee4674db47670092f67d0e0f961951') !important;
+    background-image: url('correct8.svg') !important;
 }
 
