@@ -3,12 +3,16 @@
     margin: 5px 0;
 
     label  {
-        margin-top: 6px;
+        margin-top: 10px;
+        &.no-margin {
+            margin: 0 0 0 0;
+        }
     }
 
     .label-info {
         font-size: 15px;
         color: #717171;
+        background-color: transparent;
     }
 }
 
@@ -83,12 +87,13 @@ h3.treas-list-heading {
 }
 
 label.required:after {
-    content: ' *';
+    content: '*';
     color: red;
     font-size: 24px;
     line-height: 0;
     position:relative;
-    top:5px
+    top:5px;
+    left: 1px;
 }
 
 .required-text {
