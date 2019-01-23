@@ -16,21 +16,10 @@ h3.treas-list-heading {
 }
 
 .treas-btn--delete {
-    background: transparent;
-    border-radius: 100%;
-    font-family: arial;
-    display: inline-block;
-    text-align: center;
-    border-color: #d3000d;
-    border-width: 2px;
-    color: #d3000d;
-    font-weight: 700;
-    font-size: 30px;
+    border:none;
     width: 32px;
-    line-height: 0;
     height: 32px;
-    box-sizing: border-box;
-    border-style: solid !important;
+    background: url('cancel.svg');
     margin-top: 32px;
 }
 
