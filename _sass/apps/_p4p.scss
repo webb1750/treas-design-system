@@ -1,6 +1,15 @@
 
 .p4p-form--block {
     margin: 5px 0;
+
+    label  {
+        margin-top: 6px;
+    }
+
+    .label-info {
+        font-size: 15px;
+        color: #717171;
+    }
 }
 
 h3.treas-list-heading {
