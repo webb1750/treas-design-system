@@ -47,9 +47,14 @@ h3.treas-list-heading {
 
 
 .treas-btn--submit {
-    padding: 3rem 4.5rem;
+    padding: 2.6rem 3.5rem;
     &:hover {
         color: #fff !important;
+    }
+    &.treas-btn--ghost {
+        &:hover, &:focus {
+            background-color: $color-primary;
+        }
     }
 }
 
