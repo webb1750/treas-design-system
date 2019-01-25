@@ -38,6 +38,20 @@ h3.treas-list-heading {
 }
 
 
+.treas-form-list--inline {
+    li {
+        display: inline;
+        margin-right: 30px;
+    }
+}
+
+
+.treas-btn--primary {
+    &:hover, &:focus {
+        color: #fff;
+    }
+}
+
 .display-flex {
     display: flex;
     align-items: middle;
