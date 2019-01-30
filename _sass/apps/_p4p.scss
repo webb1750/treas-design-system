@@ -177,6 +177,7 @@ label.required:after {
   margin: 10px 0px;
   padding: 15px 15px;
   border-left: solid 5px;
+  background-color: #f1f1f1;
   
   &--list {
     padding: 15px 10px 0;
@@ -185,6 +186,7 @@ label.required:after {
     font-weight: 600;
     font-size: 2.1rem;
     margin: 0px;
+    color: #111;
   }
   &--message {
     color: #000;
