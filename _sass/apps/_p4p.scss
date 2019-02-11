@@ -208,3 +208,17 @@ label.required:after {
   }
 
 }
+
+.treas-btn--lightblue {
+    background-color: #0099FF;
+
+    &.treas-btn--ghost {
+        color: #0099FF;
+        border-color: #0099FF;
+        background-color: #fff;
+    }
+
+}
+
+
+
