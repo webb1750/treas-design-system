@@ -135,6 +135,10 @@ label.required:after {
     max-height: 39px;
     overflow: hidden;
     background-color: #fff;
+
+    &.treas-input--error {
+        background-color: $color-red-lightest;
+    }
 }
 
 .treas-record-picker .select2-choice {
