@@ -242,8 +242,26 @@ label.required:after {
     &--item {
         @include reset-li();
         position:relative;
+    }
 
-        &-active .treas-jump--link {
+    &--link {
+        color: #717171;
+        background: #e8e8e8;
+        padding: 10px 40px 10px 12px;
+        font-family: "Source Sans Pro";
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 72px;
+        line-height: 1;
+        text-decoration: none;
+        font-size: 1.7rem;
+
+        &-active {
             background: #0096ff;
             color: #fff;
 
@@ -264,24 +282,6 @@ label.required:after {
         &-active .treas-jump--item-number {
             background-color: #083c6f;
         }
-    }
-
-    &--link {
-        color: #717171;
-        background: #e8e8e8;
-        padding: 10px 40px 10px 12px;
-        font-family: "Source Sans Pro";
-        letter-spacing: 1px;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        height: 72px;
-        line-height: 1;
-        text-decoration: none;
-        font-size: 1.7rem;
     }
     &--item-number {
         display:block;
