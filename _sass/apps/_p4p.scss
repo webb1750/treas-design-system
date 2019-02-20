@@ -267,6 +267,10 @@ label.required:after {
 
             &:hover {
                 color: #fff;
+
+                .treas-jump--item-number {
+                    background: #083c6f;
+                }
             }
 
             &::after {
