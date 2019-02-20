@@ -261,16 +261,17 @@ label.required:after {
         text-decoration: none;
         font-size: 1.7rem;
 
+        &:hover, &:focus  {
+            .treas-jump--item-number {
+                background: #083c6f;
+            }
+        }
         &-active {
             background: #0096ff;
             color: #fff;
 
-            &:hover {
+            &:hover, &:focus {
                 color: #fff;
-
-                .treas-jump--item-number {
-                    background: #083c6f;
-                }
             }
 
             &::after {
