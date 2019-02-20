@@ -265,6 +265,10 @@ label.required:after {
             background: #0096ff;
             color: #fff;
 
+            &:hover {
+                color: #fff;
+            }
+
             &::after {
                 content: '';
                 display: block;
