@@ -260,6 +260,8 @@ label.required:after {
         line-height: 1;
         text-decoration: none;
         font-size: 1.7rem;
+        background-position: 120% center;
+        transition: background-color .4s ease, background-position .4s ease;
 
         &:hover, &:focus  {
             .treas-jump--item-number {
@@ -291,18 +293,38 @@ label.required:after {
         &-active .treas-jump--item-number {
             background-color: #083c6f;
         }
-    }
-    &--item-number {
-        display:block;
-        margin-right: 10px;
-        background: #717171;
-        color: #fff;
-        border-radius: 100%;
-        min-width: 28px;
-        min-height: 28px;
-        text-align:center;
-        line-height:28px;
-    }
 
+        &-complete { 
+            &.treas-jump--link-active {
+                background: #0096ff url(correct-symbol.svg) no-repeat 95% center;
+                background-size: 32px;
+                }
+            &:not(.treas-jump--link-active) {
+                color: #fff;
+                background: #328443 url('correct-symbol.svg') no-repeat 95% center;
+                background-size: 32px;
+                
+                &::after {
+                border-left-color: #328443;
+                }
+                
+                .treas-jump--item-number {
+                background-color: #256232;
+                }
+            }
+        }
+
+        &--item-number {
+            display:block;
+            margin-right: 10px;
+            background: #717171;
+            color: #fff;
+            border-radius: 100%;
+            min-width: 28px;
+            min-height: 28px;
+            text-align:center;
+            line-height:28px;
+        }
+
+    }
 }
-
