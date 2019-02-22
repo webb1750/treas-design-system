@@ -270,6 +270,7 @@ label.required:after {
         &-active {
             background: #0096ff;
             color: #fff;
+            background-position: 120% center;
 
             &:hover, &:focus {
                 color: #fff;
