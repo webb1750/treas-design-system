@@ -314,17 +314,17 @@ label.required:after {
             }
         }
 
-        &--item-number {
-            display:block;
-            margin-right: 10px;
-            background: #717171;
-            color: #fff;
-            border-radius: 100%;
-            min-width: 28px;
-            min-height: 28px;
-            text-align:center;
-            line-height:28px;
-        }
+    }
 
+    &--item-number {
+        display:block;
+        margin-right: 10px;
+        background: #717171;
+        color: #fff;
+        border-radius: 100%;
+        min-width: 28px;
+        min-height: 28px;
+        text-align:center;
+        line-height:28px;
     }
 }
