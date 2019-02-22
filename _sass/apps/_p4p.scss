@@ -245,14 +245,13 @@ label.required:after {
     }
 
     &--link {
-        color: #717171;
+        color: #505050;
         background: #e8e8e8;
         padding: 10px 40px 10px 12px;
         font-family: "Source Sans Pro";
         letter-spacing: 1px;
         font-weight: 600;
         text-transform: uppercase;
-        font-size: 1.5rem;
         display: flex;
         width: 100%;
         align-items: center;
@@ -319,7 +318,7 @@ label.required:after {
     &--item-number {
         display:block;
         margin-right: 10px;
-        background: #717171;
+        background: #505050;
         color: #fff;
         border-radius: 100%;
         min-width: 28px;
