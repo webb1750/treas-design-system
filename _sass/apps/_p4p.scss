@@ -264,15 +264,15 @@ label.required:after {
 
         &:hover, &:focus  {
             .treas-jump--item-number {
-                background: #083c6f;
+                background: #002E50;
             }
         }
         &-active {
             background: #0096ff;
-            color: #fff;
+            color: #002E50;
 
             &:hover, &:focus {
-                color: #fff;
+                color: #002E50;
             }
 
             &::after {
@@ -290,7 +290,7 @@ label.required:after {
         }
 
         &-active .treas-jump--item-number {
-            background-color: #083c6f;
+            background-color: #002E50;
         }
 
         &-complete { 
