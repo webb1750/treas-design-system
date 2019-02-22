@@ -269,10 +269,10 @@ label.required:after {
         }
         &-active {
             background: #0096ff;
-            color: #002E50;
+            color: #fff;
 
             &:hover, &:focus {
-                color: #002E50;
+                color: #fff;
             }
 
             &::after {
