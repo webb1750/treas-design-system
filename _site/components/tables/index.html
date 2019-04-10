@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Tables - U.S. Treasury Design System</title>
+    <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
+    
+    
+  
+  <link rel="stylesheet" href="/css/treas-design-system.css">
+  
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="http://localhost:4000/components/tables/">
+    <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
+  
+</head>
+
+  <body class="">
+
+    
+<a class="skipnav" href="#primary-navigation">Skip to primary navigation</a>
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<!-- US Government Official Site Banner -->
+<section class="treas-topbanner">
+    <div class="treas-topbanner__wrap">
+        <div class="treas-topbanner__title">
+            <img class="treas-topbanner__usa-flag-icon" src="/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+        </div>
+    </div>
+</section>
+<!-- Application Header:Light -->
+<header class="treas-header treas-header--light">
+    <div class="treas-header__wrap">
+        <a class="treas-header__title" href="/" title="Home" aria-label="Home">
+            <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal"> 
+            <span class="treas-header__name">Treasury Design System</span>
+        </a>
+        <button class="treas-burger-menu" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+        </button>
+    </div>
+</header>
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
+            </li>
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
+            </li>
+          
+  
+        
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        
+<div class="ds-breadcrumb">
+    <ol class="ds-breadcrumb__list">
+      <li class="ds-breadcrumb__item">
+        <a href="/" class="ds-breadcrumb__link">Home</a>
+      </li>
+
+  
+  <li class="ds-breadcrumb__item">
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
+    </a>
+  
+
+  
+  
+
+  </ol>
+</div>
+
+
+<h1 class="ds-page-title" id="article-title">
+  Tables
+  
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    
+      <div id="jump-target">
+          
+      </div>
+    
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      
+      <p class="treas-text--lead">Tables show tabular data in columns and rows.</p>
+      
+
+      <p>Tables are great for displaying tabular data. Minimal visual styling helps surface this information more easily.</p>
+
+<div class="ds-preview">
+  <table class="treas-table">
+    <caption>[Table caption]</caption>
+    <thead>
+      <tr>
+        <th scope="col">Column A</th>
+        <th scope="col">Column B</th>
+        <th scope="col">Column C</th>
+        <th scope="col">Column D</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1A</td>
+        <td>1B</td>
+        <td>1C</td>
+        <td>1D</td>
+      </tr>
+      <tr>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+        <td>2D</td>
+      </tr>
+      <tr>
+        <td>3A</td>
+        <td>3B</td>
+        <td>3C</td>
+        <td>3D</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="variations">Variations</h2>
+
+<p>Styled <code class="highlighter-rouge">&lt;table&gt;</code> components use <code class="highlighter-rouge">class="treas-table"</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"treas-table"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>When you need to display tabular information, such as statistical data.</li>
+</ul>
+
+<h3 id="dont-use">Don’t Use</h3>
+
+<ul>
+  <li>For layout, use <a href="/visual-style/grid/">Grids</a>.</li>
+  <li>If the amount of content is simple or brief enough, and depending on its context, consider structuring as an <a href="/visual-style/typography/#unordered-list-bullet">unordered list</a>, <a href="/visual-style/typography/#ordered-list-numbered">ordered list</a>, or <a href="/visual-style/typography/#definition-list">definition list</a>.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<ul>
+  <li>Simple tables can have two levels of headers. Each header cell should have <code class="highlighter-rouge">scope="col"</code> or <code class="highlighter-rouge">scope="row"</code>.</li>
+  <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique <code class="highlighter-rouge">id</code> and each data cell should have a <code class="highlighter-rouge">headers</code> attribute with each related header cell’s <code class="highlighter-rouge">id</code> listed.</li>
+</ul>
+
+
+    </article>
+
+  </div>
+
+</div>
+      </div>
+    </main>
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/treas.js"></script>
+  </body>
+
+</html>

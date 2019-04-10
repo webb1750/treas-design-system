@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Select - U.S. Treasury Design System</title>
+    <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
+    
+    
+  
+  <link rel="stylesheet" href="/css/treas-design-system.css">
+  
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="http://localhost:4000/components/select/">
+    <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
+  
+</head>
+
+  <body class="">
+
+    
+<a class="skipnav" href="#primary-navigation">Skip to primary navigation</a>
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<!-- US Government Official Site Banner -->
+<section class="treas-topbanner">
+    <div class="treas-topbanner__wrap">
+        <div class="treas-topbanner__title">
+            <img class="treas-topbanner__usa-flag-icon" src="/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+        </div>
+    </div>
+</section>
+<!-- Application Header:Light -->
+<header class="treas-header treas-header--light">
+    <div class="treas-header__wrap">
+        <a class="treas-header__title" href="/" title="Home" aria-label="Home">
+            <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal"> 
+            <span class="treas-header__name">Treasury Design System</span>
+        </a>
+        <button class="treas-burger-menu" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+        </button>
+    </div>
+</header>
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
+            </li>
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
+            </li>
+          
+  
+        
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        
+<div class="ds-breadcrumb">
+    <ol class="ds-breadcrumb__list">
+      <li class="ds-breadcrumb__item">
+        <a href="/" class="ds-breadcrumb__link">Home</a>
+      </li>
+
+  
+  <li class="ds-breadcrumb__item">
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
+    </a>
+  
+
+  
+  
+
+  </ol>
+</div>
+
+
+<h1 class="ds-page-title" id="article-title">
+  Select
+  
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    
+      <div id="jump-target">
+          
+      </div>
+    
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      
+      <p class="treas-text--lead">Sometimes referred to as a “drop down,” the select element allows users to select one option from a list.</p>
+      
+
+      <div class="ds-preview">
+  <p>
+    <select class="treas-select" name="Options">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h2 id="variations">Variations</h2>
+
+<p>The style for <code class="highlighter-rouge">&lt;select&gt;</code> components always start with <code class="highlighter-rouge">class="treas-select"</code>, modifiable with one or multiple <code class="highlighter-rouge">treas-select--[variation]</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--[variation]"</span> <span class="na">name=</span><span class="s">"Options"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/select&gt;</span>
+</code></pre></div></div>
+
+<h3 id="default">Default</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select"</span> <span class="na">name=</span><span class="s">"Options lorem"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select" name="Options lorem">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="round">Round</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--round"</span> <span class="na">name=</span><span class="s">"Options lorem"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--round" name="Options lorem">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="full-width">Full-width</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--block"</span> <span class="na">name=</span><span class="s">"Options ipsum"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--block" name="Options ipsum">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="small">Small</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--small"</span> <span class="na">name=</span><span class="s">"Options dolor"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--small" name="Options dolor">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="large">Large</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--large"</span> <span class="na">name=</span><span class="s">"Options sit"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--large" name="Options sit">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="response-error">Response: Error</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--error"</span> <span class="na">name=</span><span class="s">"Options amet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--error" name="Options amet">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="response-success">Response: Success</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select treas-select--success"</span> <span class="na">name=</span><span class="s">"Options gemino"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select treas-select--success" name="Options gemino">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h3 id="disabled">Disabled</h3>
+
+<p>Disabled select components do not have a <code class="highlighter-rouge">class="treas-select--[variation]"</code>, instead using the <code class="highlighter-rouge">disabled</code> attribute.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"treas-select"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">name=</span><span class="s">"Options quis"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option A"</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Option E"</span><span class="nt">&gt;</span>Option E<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p>
+    <select class="treas-select" disabled="disabled" name="Options quis">
+      <option value="Option A" selected="selected">Option A</option>
+      <option value="Option B">Option B</option>
+      <option value="Option C">Option C</option>
+      <option value="Option D">Option D</option>
+      <option value="Option E">Option E</option>
+    </select>
+  </p>
+</div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.</li>
+</ul>
+
+<h3 id="dont-use">Don’t Use</h3>
+
+<ul>
+  <li>If the list of options is very short. Use <a href="/components/radio/">radio buttons</a> instead.</li>
+  <li>If the list of options is very long. Let users type the same information into a <a href="/components/text-input/">text input</a> that suggests possible options instead.</li>
+  <li>If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from the select element. Use <a href="/components/checkbox/">checkboxes</a> instead.</li>
+  <li>For site navigation.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<p>If you customize the select element, ensure they continue to meet the the accessibility requirements that apply to all form controls.</p>
+
+<ul>
+  <li>Make sure your dropdown has an accessible label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
+  <li>Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
+</ul>
+
+<h2 id="general-guidance">General Guidance</h2>
+
+<ul>
+  <li>Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.</li>
+  <li>Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.</li>
+  <li>When most users will (or should) pick a particular option, make it the default: <code class="highlighter-rouge">&lt;option selected="selected"&gt;Default&lt;/option&gt;</code></li>
+  <li>Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times, particularly if interacting with a form solely with keyboard. Auto-submission is also less accessible.</li>
+</ul>
+
+
+    </article>
+
+  </div>
+
+</div>
+      </div>
+    </main>
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/treas.js"></script>
+  </body>
+
+</html>

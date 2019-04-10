@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Text Input - U.S. Treasury Design System</title>
+    <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
+    
+    
+  
+  <link rel="stylesheet" href="/css/treas-design-system.css">
+  
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="http://localhost:4000/components/text-input/">
+    <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
+  
+</head>
+
+  <body class="">
+
+    
+<a class="skipnav" href="#primary-navigation">Skip to primary navigation</a>
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<!-- US Government Official Site Banner -->
+<section class="treas-topbanner">
+    <div class="treas-topbanner__wrap">
+        <div class="treas-topbanner__title">
+            <img class="treas-topbanner__usa-flag-icon" src="/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+        </div>
+    </div>
+</section>
+<!-- Application Header:Light -->
+<header class="treas-header treas-header--light">
+    <div class="treas-header__wrap">
+        <a class="treas-header__title" href="/" title="Home" aria-label="Home">
+            <img class="treas-header__logo" src="/img/logo.svg" alt="U.S. Department of the Treasury seal"> 
+            <span class="treas-header__name">Treasury Design System</span>
+        </a>
+        <button class="treas-burger-menu" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+            <span class="treas-burger-menu__line"></span>
+        </button>
+    </div>
+</header>
+<!-- Main Navigation -->
+<nav class="treas-main-nav">
+    <div class="treas-main-nav__wrap">
+      <ul class="treas-main-nav__list" id="primary-navigation" aria-label="Primary Navigation">
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
+            </li>
+          
+  
+        
+  
+          
+          
+  
+          
+  
+          
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
+            </li>
+          
+  
+        
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div class="ds-body">
+        
+<div class="ds-breadcrumb">
+    <ol class="ds-breadcrumb__list">
+      <li class="ds-breadcrumb__item">
+        <a href="/" class="ds-breadcrumb__link">Home</a>
+      </li>
+
+  
+  <li class="ds-breadcrumb__item">
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
+    </a>
+  
+
+  
+  
+
+  </ol>
+</div>
+
+
+<h1 class="ds-page-title" id="article-title">
+  Text Input
+  
+</h1>
+
+<div class="ds-l-page">
+
+  <div class="ds-l-page__adjacent">
+
+    
+      <div id="jump-target">
+          
+      </div>
+    
+
+  </div>
+
+  <div class="ds-l-page__body">
+
+    <article class="ds-article">
+
+      
+      <p class="treas-text--lead">Text input fields allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted).</p>
+      
+
+      <div class="ds-preview">
+  <p><input class="treas-input" type="text" name="some_name2" placeholder="Placeholder" value="Text" /></p>
+</div>
+
+<h2 id="variations">Variations</h2>
+
+<p>The style for <code class="highlighter-rouge">&lt;input&gt;</code> text components always start with <code class="highlighter-rouge">class="treas-input"</code>, modifiable with one or multiple <code class="highlighter-rouge">treas-input--[variation]</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--[variation]"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"some_name"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="default">Default</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"1iuoytytesgdf"</span> <span class="na">value=</span><span class="s">"Text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input" type="text" name="1iuoytytesgdf" value="Text" placeholder="Placeholder" /></p>
+</div>
+
+<h3 id="round">Round</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--round"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"1idf"</span> <span class="na">value=</span><span class="s">"Text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--round" type="text" name="1idf" value="Text" placeholder="Placeholder" /></p>
+</div>
+
+<h3 id="full-width">Full-width</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--block"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"155tj"</span> <span class="na">value=</span><span class="s">"Text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--block" type="text" name="155tj" value="Text" placeholder="Placeholder" /></p>
+</div>
+
+<h3 id="small">Small</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--small"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"qwerty"</span> <span class="na">value=</span><span class="s">"Text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--small" type="text" name="qwerty" value="Text" placeholder="Placeholder" /></p>
+</div>
+
+<h3 id="large">Large</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--large"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"ytrewq"</span> <span class="na">value=</span><span class="s">"Text"</span> <span class="na">placeholder=</span><span class="s">"Placeholder"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--large" type="text" name="ytrewq" value="Text" placeholder="Placeholder" /></p>
+</div>
+
+<h3 id="response-error">Response: Error</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"7id"</span> <span class="na">value=</span><span class="s">"Text"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--error" type="text" name="7id" value="Text" /></p>
+</div>
+
+<h3 id="response-success">Response: Success</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input treas-input--success"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"lorem"</span> <span class="na">value=</span><span class="s">"Text"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input treas-input--success" type="text" name="lorem" value="Text" /></p>
+</div>
+
+<h3 id="disabled">Disabled</h3>
+
+<p>Disabled fields do not have a <code class="highlighter-rouge">class="treas-input--[variation]"</code>, instead using the <code class="highlighter-rouge">disabled</code> attribute.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input"</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"1224hd9f"</span> <span class="na">value=</span><span class="s">"Text"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input" disabled="disabled" type="text" name="1224hd9f" value="Text" /></p>
+</div>
+
+<h3 id="readonly">Readonly</h3>
+
+<p>Readonly fields do not have a <code class="highlighter-rouge">class="treas-input--[variation]"</code>, instead using the <code class="highlighter-rouge">readonly</code> attribute.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;input</span> <span class="na">class=</span><span class="s">"treas-input"</span> <span class="na">readonly=</span><span class="s">"readonly"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"4f"</span> <span class="na">value=</span><span class="s">"Text"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+<div class="ds-preview">
+  <p><input class="treas-input" readonly="readonly" type="text" name="4f" value="Text" /></p>
+</div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.</li>
+  <li>When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.</li>
+  <li>When users want to be able to paste in a response.</li>
+  <li>When users need only a single line of entry.</li>
+</ul>
+
+<h3 id="dont-use">Don’t Use</h3>
+
+<ul>
+  <li>When the value user enter are limited in amount</li>
+  <li>When users are choosing from a specific set of options. Consider <a href="/components/select/">select</a>, <a href="/components/radio/">radio</a>, or <a href="/components/checkbox/">checkbox</a>.</li>
+  <li>When users need to enter multiple lines of content, consider the <a href="/components/textarea/">textarea</a> element.</li>
+</ul>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<p>If you customize the text inputs, ensure they continue to meet the the accessibility requirements that apply to all form controls.</p>
+
+<ul>
+  <li>Do not use the <code class="highlighter-rouge">placeholder</code> attribute as the sole label for accessibility reasons. Form components must have an associated <code class="highlighter-rouge">&lt;label&gt;</code> with matching <code class="highlighter-rouge">for</code> attribute. Additionally, most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio to sufficiently serve as the sole label.</li>
+  <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
+</ul>
+
+<h2 id="general-guidance">General Guidance</h2>
+
+<ul>
+  <li>The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a <a href="/components/textarea/">textarea</a> instead.</li>
+  <li>Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</li>
+  <li>Consider the type of content a user may enter to aid mobile device entry; mobile devices typically surface a keyboard UI attuned to the type. For example, <code class="highlighter-rouge">type="tel"</code> will surface a <a href="http://html5doctor.com/html5-forms-input-types/#input-tel">phone keyboard</a>.</li>
+  <li>Only show error validation messages or styling after a user has interacted with a particular field; avoid significantly updating styles while a user is actively entering input.</li>
+  <li>Do not use the <code class="highlighter-rouge">placeholder</code> attribute in place of a <code class="highlighter-rouge">&lt;label&gt;</code> element. Its purposes is different: the standard <code class="highlighter-rouge">&lt;label&gt;</code> describes the role of the form element; that is, it indicates what kind of information is expected. The <code class="highlighter-rouge">placeholder</code> attribute is typically a hint about the format the content should take. There are cases in which the placeholder attribute is not displayed to the user (e.g. when input field has a value), so the form must be understandable without it.</li>
+</ul>
+
+
+    </article>
+
+  </div>
+
+</div>
+      </div>
+    </main>
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/treas.js"></script>
+  </body>
+
+</html>
