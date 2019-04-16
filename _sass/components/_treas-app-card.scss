@@ -1,0 +1,73 @@
+.treas-app-card {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    margin-top: 64px;  
+    display: flex;
+    flex-flow: column;
+    flex-basis: 30.5%;
+    min-width: 295px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    
+    @media screen and (max-width: 1120px){
+        flex-grow: 1;
+    }
+  
+    &--wrapper {
+      display: flex;
+      flex: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right:-1.5rem;
+      margin-left:-1.5rem;
+    }
+    &--heading {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.18;
+      font-size: 2.4rem;
+      color: #0053a2;
+      font-weight: 700;
+      max-width: 32ch;
+      margin: 2rem auto 0;
+    }
+    &--desc {
+      font-size: 1.6rem;
+      max-width: 24ch;
+      margin: 0 auto;
+      margin-top: auto;
+    }
+    &--text {
+      margin-bottom: 1em;
+      margin-top: 1em;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    &--graphic {
+      position: relative;
+      margin: 0 auto;
+      width: 84px;
+      height: 84px;
+      background-color: #0053a2;
+      border-radius: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -64px;
+    }
+    &--icon {
+      width: 44px;
+      height: 44px;
+      display: block;
+  
+    }
+    .treas-btn--ghost {
+      background-color: transparent;
+      max-width: 24ch;
+      padding: 1.15rem 3.5rem;
+    }
+    
+  }

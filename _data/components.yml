@@ -110,3 +110,7 @@
     - subtitle: "Tags"
       subhref: "/components/tags"
       img: "/img/components/tag.png"
+
+    - subtitle: "Treasury App Card"
+      subhref: "/components/app-card"
+      img: "/img/components/"
