@@ -6,10 +6,11 @@
     margin-top: 64px;  
     display: flex;
     flex-flow: column;
-    flex-basis: 30.5%;
     min-width: 295px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    flex: 1 1 0;
+    max-width: 350px;
     
     @media screen and (max-width: 1120px){
         flex-grow: 1;
@@ -20,7 +21,6 @@
       flex: auto;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
       margin-right:-1.5rem;
       margin-left:-1.5rem;
     }
