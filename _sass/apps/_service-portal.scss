@@ -71,3 +71,166 @@
     }
     
   }
+
+/* 5/8/2019 UPDATES BY ROSORIO */
+
+body {
+  background-color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.navbar-brand img {
+  zoom: 130%;
+  max-width: 320px !important;
+}
+
+.panel, .panel-default {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  h2 {
+    //font-size: 22px;
+    //font-family: Merriweather, serif;
+    //font-weight: 300;
+    //color: #3D3B47;
+  }
+  .panel-footer {
+    a {
+      color: #393b3e;
+    }
+  }
+}
+
+ .page {
+   main.body {
+    padding-top: 30px;
+     h1.h4 {
+       font-size: 40px;
+       font-family: Merriweather, serif;
+       font-weight: 300;
+       color: #3D3B47;
+       margin-bottom: 30px;
+     }
+   }
+ }
+  nav.navbar {
+    padding: 0 5px;
+    .header-menu-item {
+        & > a {
+          span {
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+
+    }
+
+#profile-dropdown span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #f3f700;
+}
+
+#profile-dropdown .navbar-avatar .sub-avatar span {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+
+
+  .breadcrumbs-container {
+    background: #f1f2f2;
+    border: none;
+    .nav-pills {
+
+      li {
+        padding: 10px 7px;
+
+        > span {
+          > a {
+            display: inline;
+            color: #49525C;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+
+          > i {
+            padding-left: 15px;
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+
+  .treasury--kb-category {
+    border: none;
+    box-shadow: none;
+    .panel-heading {
+      background: transparent;
+      border: none;
+      .panel-title {
+        font-weight: 700 !important;
+        font-size: 22px !important;
+        margin: 15px 0 0 !important;
+        color: #0453A4 !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: "Source Sans Pro", sans-serif !important;
+      }
+    }
+    .list-group {
+      li {
+        a {
+          font-size: 1.2em;
+          color: #5e5e5e;
+        }
+      }
+    }
+  }
+
+
+  .treasury--panel {
+
+    .panel {
+      border: none;
+      box-shadow: none;
+      .panel-heading {
+        background: transparent;
+        border: none;
+        .panel-title {
+          font-weight: 700 !important;
+          font-size: 22px !important;
+          margin: 15px 0 0 !important;
+          color: #0453A4 !important;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: "Source Sans Pro", sans-serif !important;
+        }
+      }
+      .list-group {
+        li {
+          a {
+            font-size: 1.2em;
+            color: #5e5e5e;
+          }
+        }
+      }
+    }
+
+  }
+
+
