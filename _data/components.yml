@@ -24,25 +24,25 @@
     #   subhref: "visual-style/logo"
     #   img: "/img/components/logo.png"
 
-    - subtitle: "Color"
-      subhref: "/visual-style/color"
-      img: "/img/components/color.png"
+    # - subtitle: "Color"
+    #   subhref: "/visual-style/color"
+    #   img: "/img/components/color.png"
 
     - subtitle: "Typography"
       subhref: "/visual-style/typography"
       img: "/img/components/typography.png"
 
-    - subtitle: "Size and Spacing Units"
-      subhref: "/visual-style/size-and-space"
-      img: "/img/components/size-and-space.png"
+    # - subtitle: "Size and Spacing Units"
+    #   subhref: "/visual-style/size-and-space"
+    #   img: "/img/components/size-and-space.png"
 
-    - subtitle: "Grid, Layout, and Responsive Web Design"
-      subhref: "/visual-style/grid"
-      img: "/img/components/grid.png"
+    # - subtitle: "Grid, Layout, and Responsive Web Design"
+    #   subhref: "/visual-style/grid"
+    #   img: "/img/components/grid.png"
 
-    - subtitle: "CSS Utilities"
-      subhref: "/visual-style/utilities"
-      img: "/img/components/utilities.png"
+    # - subtitle: "CSS Utilities"
+    #   subhref: "/visual-style/utilities"
+    #   img: "/img/components/utilities.png"
 
     - subtitle: "Icons"
       subhref: "/visual-style/icons"
