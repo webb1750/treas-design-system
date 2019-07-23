@@ -28,9 +28,9 @@
     #   subhref: "/visual-style/color"
     #   img: "/img/components/color.png"
 
-- subtitle: "Typography"
-  subhref: "/visual-style/typography"
-  img: "/img/components/typography.png"
+    - subtitle: "Typography"
+      subhref: "/visual-style/typography"
+      img: "/img/components/typography.png"
 
 
     #- subtitle: "Size and Spacing Units"
