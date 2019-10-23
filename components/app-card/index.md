@@ -1,8 +1,8 @@
 ---
 layout: page
 parent: "Components"
-title: "Treasury App Card"
-intro: "The Treasury App Card can be used to display multiple apps or services on your site."
+title: "Application Card"
+intro: "The Application Card can be used to display multiple apps or services on your site."
 jump_menu: true
 ---
 
@@ -10,60 +10,68 @@ jump_menu: true
         
         <!-- App Card -->
         <div class="treas-app-card">
-          <div class="treas-app-card--graphic">
-            <img class="treas-app-card--icon" src="/img/graphic.svg" />
-          </div>
-          <h3 class="treas-app-card--heading">Provisioning for People (P4P)</h3>
-          <div class="treas-app-card--desc">
-            <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
-          </div>
-          <div class="treas-app-card--action">
-            <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
-          </div>
-        </div>
-        <!-- /App Card -->
-
-        <!-- App Card -->
-        <div class="treas-app-card">
-          <div class="treas-app-card--graphic">
-            <img class="treas-app-card--icon" src="/img/graphic.svg" />
-          </div>
-          <h3 class="treas-app-card--heading">Secure Container Tracking</h3>
-          <div class="treas-app-card--desc">
-            <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
-          </div>
-          <div class="treas-app-card--action">
-            <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+          <div class="treas-app-card--content">
+            <div class="treas-app-card--graphic">
+              <img class="treas-app-card--icon" src="/img/graphic.svg" />
+            </div>
+            <h3 class="treas-app-card--heading">Provisioning for People (P4P)</h3>
+            <div class="treas-app-card--desc">
+              <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
+            </div>
+            <div class="treas-app-card--action">
+              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+            </div>
           </div>
         </div>
         <!-- /App Card -->
 
         <!-- App Card -->
         <div class="treas-app-card">
-          <div class="treas-app-card--graphic">
-            <img class="treas-app-card--icon" src="/img/graphic.svg" />
+          <div class="treas-app-card--content">
+            <div class="treas-app-card--graphic">
+              <img class="treas-app-card--icon" src="/img/graphic.svg" />
+            </div>
+            <h3 class="treas-app-card--heading">Secure Container Tracking</h3>
+            <div class="treas-app-card--desc">
+              <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
+            </div>
+            <div class="treas-app-card--action">
+              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+            </div>
           </div>
-          <h3 class="treas-app-card--heading">IT Service Desk</h3>
-          <div class="treas-app-card--desc">
-            <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
-          </div>
-          <div class="treas-app-card--action">
-            <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+        </div>
+        <!-- /App Card -->
+
+        <!-- App Card -->
+        <div class="treas-app-card">
+          <div class="treas-app-card--content">
+            <div class="treas-app-card--graphic">
+              <img class="treas-app-card--icon" src="/img/graphic.svg" />
+            </div>
+            <h3 class="treas-app-card--heading">IT Service Desk</h3>
+            <div class="treas-app-card--desc">
+              <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
+            </div>
+            <div class="treas-app-card--action">
+              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+            </div>
           </div>
         </div>
         <!-- /App Card -->
         
         <!-- App Card -->
         <div class="treas-app-card">
-          <div class="treas-app-card--graphic">
-            <img class="treas-app-card--icon" src="/img/graphic.svg" />
-          </div>
-          <h3 class="treas-app-card--heading">Intake Request Mananagement</h3>
-          <div class="treas-app-card--desc">
-            <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
-          </div>
-          <div class="treas-app-card--action">
-            <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+          <div class="treas-app-card--content">
+            <div class="treas-app-card--graphic">
+              <img class="treas-app-card--icon" src="/img/graphic.svg" />
+            </div>
+            <h3 class="treas-app-card--heading">Intake Request Mananagement</h3>
+            <div class="treas-app-card--desc">
+              <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
+            </div>
+            <div class="treas-app-card--action">
+              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+            </div>
           </div>
         </div>
         <!-- /App Card -->
@@ -76,17 +84,19 @@ The Treasury App Card shall use the following `class="treas-app-card"` and requi
 ```html
 <!-- App Card Wrapper  -->
 <div class="treas-app-card--wrapper">
-<!-- App Card -->
+  <!-- App Card -->
   <div class="treas-app-card">
-    <div class="treas-app-card--graphic">
-      <img class="treas-app-card--icon" src="/img/graphic.svg" />
-    </div>
-    <h3 class="treas-app-card--heading">Provisioning for People (P4P)</h3>
-    <div class="treas-app-card--desc">
-      <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
-    </div>
-    <div class="treas-app-card--action">
-      <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+    <div class="treas-app-card--content">
+      <div class="treas-app-card--graphic">
+        <img class="treas-app-card--icon" src="/img/graphic.svg" />
+      </div>
+      <h3 class="treas-app-card--heading">[Card Title Goes Here]</h3>
+      <div class="treas-app-card--desc">
+        <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
+      </div>
+      <div class="treas-app-card--action">
+        <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+      </div>
     </div>
   </div>
 </div>

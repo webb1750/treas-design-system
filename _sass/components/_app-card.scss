@@ -1,28 +1,40 @@
+$card-col-12: 100%;
+$card-col-6: 48.5%;
+$card-col-4: 31.5%;
+$card-col-3: 23.5%;
+
 .treas-app-card {
     text-align: center;
-    background: #f1f1f1;
-    padding: 2rem 4rem;
-    margin-bottom: 3rem;
-    margin-top: 64px;  
     display: flex;
     flex-flow: column;
-    flex-basis: 30.5%;
-    min-width: 295px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    
-    @media screen and (max-width: 1120px){
-        flex-grow: 1;
+    flex-basis: $card-col-4;
+    margin: 5rem 0 2rem;
+    @media screen and (max-width: 60rem){
+      flex-basis: $card-col-6;
     }
-  
+    @media screen and (max-width: 40rem){
+      flex-basis: $card-col-12;
+    }
     &--wrapper {
       display: flex;
       flex: auto;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
-      margin-right:-1.5rem;
-      margin-left:-1.5rem;
+
+      &:after {
+        content: "";
+        flex: auto;
+        flex-basis: $card-col-4;
+        flex-grow: 0;
+      }
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      background: #f1f1f1;
+      padding: 2rem 3rem 3rem;
+      height: 100%;
     }
     &--heading {
       text-transform: uppercase;
@@ -31,14 +43,14 @@
       font-size: 2.4rem;
       color: #0053a2;
       font-weight: 700;
-      max-width: 32ch;
+      max-width: 45ch;
       margin: 2rem auto 0;
     }
     &--desc {
       font-size: 1.6rem;
-      max-width: 24ch;
+      max-width: 36ch;
       margin: 0 auto;
-      margin-top: auto;
+      margin-bottom: 1.5rem;
     }
     &--text {
       margin-bottom: 1em;
@@ -62,11 +74,13 @@
       width: 44px;
       height: 44px;
       display: block;
-  
+    }
+    &--action {
+      margin-top: auto;
     }
     .treas-btn--ghost {
       background-color: transparent;
-      max-width: 24ch;
+      max-width: 32ch;
       padding: 1.15rem 3.5rem;
     }
     

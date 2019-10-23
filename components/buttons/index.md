@@ -9,9 +9,12 @@ jump_menu: true
 <div class="ds-preview ds-preview--dark">
   <button class="treas-btn treas-btn--primary" type="button">Label</button>
   <button class="treas-btn treas-btn--secondary" type="button">Label</button>
-  <button class="treas-btn treas-btn--ghost" type="button">Label</button>
+  <button class="treas-btn treas-btn--outline" type="button">Label</button>
   <button class="treas-btn treas-btn--inverse" type="button">Label</button>
-  <button class="treas-btn treas-btn--rectangle treas-btn--small treas-btn--secondary" type="button">Label</button>
+  <button class="treas-btn treas-btn--rectangle treas-btn--secondary" type="button">Label</button>
+  <a href="#decorative" class="treas-btn treas-btn--outline" type="button">
+    <span class="treas-btn__icon icon-launch"></span>Label
+  </a>
 </div>
 
 ## Variations
@@ -41,13 +44,13 @@ Buttons are styled with `class="treas-btn"`, modifiable with one or multiple `tr
   <button class="treas-btn treas-btn--secondary" type="button">Label</button>
 </div>
 
-### Ghost
+### Outline
 
 ```html
-<button class="treas-btn treas-btn--ghost" type="button">Label</button>
+<button class="treas-btn treas-btn--outline" type="button">Label</button>
 ```
 <div class="ds-preview">
-  <button class="treas-btn treas-btn--ghost" type="button">Label</button>
+  <button class="treas-btn treas-btn--outline" type="button">Label</button>
 </div>
 
 ### Inverse
@@ -57,6 +60,15 @@ Buttons are styled with `class="treas-btn"`, modifiable with one or multiple `tr
 ```
 <div class="ds-preview ds-preview--dark">
   <button class="treas-btn treas-btn--inverse" type="button">Label</button>
+</div>
+
+### Inverse Outline
+
+```html
+<button class="treas-btn treas-btn--outline treas-btn--inverse" type="button">Label</button>
+```
+<div class="ds-preview ds-preview--dark">
+  <button class="treas-btn treas-btn--outline treas-btn--inverse" type="button">Label</button>
 </div>
 
 ### Rectangle 
@@ -96,7 +108,7 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
 <div class="ds-preview">
   <button class="treas-btn treas-btn--primary" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--secondary" type="button" disabled="disabled">Label</button>
-  <button class="treas-btn treas-btn--ghost" type="button" disabled="disabled">Label</button>
+  <button class="treas-btn treas-btn--outline" type="button" disabled="disabled">Label</button>
   <button class="treas-btn treas-btn--secondary treas-btn--rectangle" type="button" disabled="disabled">Labels</button>
 </div>
 
@@ -122,12 +134,12 @@ Disabled buttons do not have a `class="treas-btn--[state]"`, instead using the `
 Buttons can include icons for more decorative styling. For a list of available icons, visit the [icons list](/visual-style/icons) page. 
 
 ```html
-<button class="treas-btn treas-btn--ghost treas-btn--small" type="button">
+<button class="treas-btn treas-btn--outline treas-btn--small" type="button">
     <span class="treas-btn__icon icon-launch"></span>Label
 </button>
 ```
 <div class="ds-preview">
-    <button class="treas-btn treas-btn--ghost treas-btn--small" type="button">
+    <button class="treas-btn treas-btn--outline treas-btn--small" type="button">
         <span class="treas-btn__icon icon-launch"></span>Label
     </button>
 </div>
