@@ -17,7 +17,7 @@ jump_menu: true
   </div>
 </div>
 
-Search box inputs/buttons require a wrapping element with the style `class="treas-input-group"`. They are built using an input field styled with`class="treas-input--search"` and a button styled with `class="treas-btn--search"`.
+Search box inputs/buttons require a wrapping element with the style `class="treas-input-group"`. They are built using an input field styled with `class="treas-input--search"` and a button styled with `class="treas-btn--search"`.
 
 ```html
   <div class="treas-input-group">
