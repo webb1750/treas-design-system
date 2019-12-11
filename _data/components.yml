@@ -124,3 +124,7 @@
     - subtitle: "Accent Card"
       subhref: "/components/accent-card"
       img: "/img/components/accent-card.png"
+
+    - subtitle: "Search"
+      subhref: "/components/search"
+      img: "/img/components/search.png"
