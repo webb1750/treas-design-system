@@ -116,3 +116,11 @@
     - subtitle: "App Card"
       subhref: "/components/app-card"
       img: "/img/components/app-card.png"
+
+    - subtitle: "Hero Card"
+      subhref: "/components/hero-card"
+      img: "/img/components/hero-card.png"
+
+    - subtitle: "Accent Card"
+      subhref: "/components/accent-card"
+      img: "/img/components/accent-card.png"

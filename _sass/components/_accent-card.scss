@@ -1,0 +1,55 @@
+.treas-accent-card {
+    background-color: $color-blue-darker;
+    padding: 3.2rem 4rem;
+    color: #fff;
+
+    &--title {
+        margin: 0 0 0 0;
+        @include h1;
+        line-height: 1.1;
+        color: #fff;
+        @include breakpoint (L, up){
+            max-width: 90%;
+        }
+    }
+    &--text {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        color: #fff;
+        @include breakpoint (L, up){
+            max-width: 90%;
+        }
+    }
+    &--action {
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        color: #fff;
+        background:transparent url(/img/right-arrow-circle.svg) no-repeat 0 center;
+        background-size: 2.8rem 2.8rem;
+        padding: 0.6rem 0;
+        padding-left: 3.8rem;
+        border: none;
+        transition: all .4s ease;
+        border-radius: none;
+
+        &:hover, &:focus {
+            background-color: transparent;
+            color: #fff;
+            opacity: .8;
+        }
+    }
+}
+
+$card-colors: ('blue', 'green', 'red', 'grey', 'gold', 'dark');
+
+@each $item in $card-colors {
+  .treas-accent-card--#{$item} {
+    background-image: url(/img/background-#{$item}.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+

@@ -19,7 +19,7 @@ jump_menu: true
               <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
             </div>
             <div class="treas-app-card--action">
-              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+              <a href="#" class="treas-btn treas-btn--outline treas-btn--block">Launch App</a>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ jump_menu: true
               <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
             </div>
             <div class="treas-app-card--action">
-              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+              <a href="#" class="treas-btn treas-btn--outline treas-btn--block">Launch App</a>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ jump_menu: true
               <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
             </div>
             <div class="treas-app-card--action">
-              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+              <a href="#" class="treas-btn treas-btn--outline treas-btn--block">Launch App</a>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ jump_menu: true
               <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
             </div>
             <div class="treas-app-card--action">
-              <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+              <a href="#" class="treas-btn treas-btn--outline treas-btn--block">Launch App</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ The Treasury App Card shall use the following `class="treas-app-card"` and requi
         <p class="treas-app-card--text">This is where some descriptive text will go. More information will go in this area.</p>
       </div>
       <div class="treas-app-card--action">
-        <a href="#" class="treas-btn treas-btn--ghost treas-btn--block">Launch App</a>
+        <a href="#" class="treas-btn treas-btn--outline treas-btn--block">Launch App</a>
       </div>
     </div>
   </div>

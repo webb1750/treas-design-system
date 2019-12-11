@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <title>Typography - U.S. Treasury Design System</title>
+    <title>Hero Card - U.S. Treasury Design System</title>
     <meta name="description" content="Design System site for U.S. Department of the Treasury digital products">
     
     
@@ -17,7 +17,7 @@
 
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="canonical" href="http://localhost:4000/visual-style/typography/">
+    <link rel="canonical" href="http://localhost:4000/components/hero-card/">
     <link rel="alternate" type="application/rss+xml" title="U.S. Treasury Design System" href="http://localhost:4000/feed.xml">
   
 </head>
@@ -80,8 +80,8 @@
           
   
           
-            <li class="treas-main-nav__list-item   treas-main-nav__list-item--active">
-              <a class="treas-main-nav__link" href="/visual-style" aria-current="true">Visual Style</a>
+            <li class="treas-main-nav__list-item   ">
+              <a class="treas-main-nav__link" href="/visual-style" >Visual Style</a>
             </li>
           
   
@@ -93,8 +93,8 @@
           
   
           
-            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last ">
-              <a class="treas-main-nav__link" href="/components" >Components</a>
+            <li class="treas-main-nav__list-item  treas-main-nav__list-item--last treas-main-nav__list-item--active">
+              <a class="treas-main-nav__link" href="/components" aria-current="true">Components</a>
             </li>
           
   
@@ -114,8 +114,8 @@
 
   
   <li class="ds-breadcrumb__item">
-    <a href="/visual-style/" class="ds-breadcrumb__link">
-        Visual style
+    <a href="/components/" class="ds-breadcrumb__link">
+        Components
     </a>
   
 
@@ -127,7 +127,7 @@
 
 
 <h1 class="ds-page-title" id="article-title">
-  Typography
+  Hero Card
   
 </h1>
 
@@ -135,6 +135,10 @@
 
   <div class="ds-l-page__adjacent">
 
+    
+      <div id="jump-target">
+          
+      </div>
     
 
   </div>
@@ -144,21 +148,41 @@
     <article class="ds-article">
 
       
-      <p class="treas-text--lead">The U.S. Web Design Standards (developed by GSA-18F) recommends a font system that uses two open-source font families: Source Sans Pro and Merriweather, both of which are designed for legibility and can beautifully adapt to a variety of visual styles.</p>
+      <p class="treas-text--lead">The Hero Card can be used to display a call to action element inside your hero section.</p>
       
 
-      <h2 id="typeface">Typeface</h2>
+      <div class="usdt-row">
+  <div class="usdt-col-md-5">
+    <!-- Hero Card -->
+    <div class="treas-hero-card">
+      <h2 class="treas-hero-card--title">Welcome to my hero!</h2>
+      <p class="treas-hero-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+      <a href="#" class="treas-btn treas-btn--primary treas-hero-card--action">Call to action</a>
+    </div>
+    <!-- /Hero Card -->
+  </div>
+</div>
 
-<p><strong>Source Sans Pro</strong> is an open-source sans-serif typeface created for <strong>legibility in UI design</strong>. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
+<h2 id="hero-card">Hero Card</h2>
 
-<h1>Page heading</h1>
-<p class="treas-text--lead">Example of lead text. Learn more about the historical treasures found within our story-rich walls.</p>
-<h2>Section heading</h2>
-<h3>Section of this subject</h3>
-<p>Enterprise Business Solutions (EBS) is part of Treasury’s Departmental Offices (DO) within the Office of Management, serving as the enterprise applications arm of the Office of the Chief Information Officer (OCIO). EBS operates as a Shared Service Provider and is a designated HR line of Business (HRLOB), offering shared and scalable products, platforms and services across the Federal landscape.</p>
-<p>The Shared Services Programs within the Treasury Franchise Fund provide common administrative services that benefit customers both within Treasury and outside agencies. The SSP provide these services on a centralized basis, where they can be administered more advantageously and more economically than they could be provided otherwise.</p>
-<h4>Subsection of the page</h4>
-<p>The Shared Services Programs within the Treasury Franchise Fund provide common administrative services that benefit customers both within Treasury and outside agencies. The SSP provide these services on a centralized basis, where they can be administered more advantageously and more economically than they could be provided otherwise.</p>
+<p>The Treasury Hero Card shall use the following <code class="highlighter-rouge">class="treas-hero-card"</code>. The description text for each card should be kept short (120 characters max).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c">&lt;!-- Hero Card --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treas-hero-card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"treas-hero-card--title"</span><span class="nt">&gt;</span>Hero card title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"treas-hero-card--text"</span><span class="nt">&gt;</span>This is where a short amount of text goes to support your call to action.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"treas-btn treas-btn--primary treas-hero-card--action"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="c">&lt;!-- /Hero Card --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="use-when">Use When</h3>
+
+<ul>
+  <li>An Treasury Application has a hero section and requires a call to action.</li>
+</ul>
 
 
 

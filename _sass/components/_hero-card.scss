@@ -1,0 +1,27 @@
+.treas-hero-card {
+    background-color: #fff;
+    padding: 3.0rem;
+    box-shadow: 0px 2px 11px rgba(0,0,0,0.5);
+
+    &--title {
+        margin: 0 0 0 0;
+        @include h1;
+        line-height: 1.1;
+        color: $color-gray-dark;
+        @include breakpoint (L, up){
+            max-width: 90%;
+        }
+    }
+    &--text {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        color: $color-gray-dark;
+        @include breakpoint (L, up){
+            max-width: 90%;
+        }
+    }
+    &--action {
+        margin-top: 2rem;
+    }
+}
