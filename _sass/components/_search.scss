@@ -8,6 +8,11 @@
     height: 3.9rem;
     border: 1px solid $color-gray-light;
     width: 100%;
+
+    &:focus, &:hover {
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 0 4px rgba(0, 161, 255, 0.6);
+        border-color: #66bcff;
+    }
 }
 
 .treas-btn--search {
@@ -20,6 +25,10 @@
     border:none;
     height: 3.9rem;
     border-radius: 0rem 2rem 2rem 0rem;
+
+    &:active {
+        top: 2px;
+    }
 
     .icon-search {
         font-size: 2.4rem;
