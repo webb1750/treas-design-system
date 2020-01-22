@@ -233,4 +233,20 @@ a:hover {
 
   }
 
+/* fix for multi-select box on service now 1/22/2020 */
+.treas-select--multi select {
+    border-radius: 0;
+    height:auto;
+    overflow-y:auto;
+    background-image:none;
+}
 
+
+.treas-select--multi label {
+    margin-top:0.5rem;
+}
+
+td.buttonCell a {
+    display:block;
+    padding: 5px 12px;
+}
