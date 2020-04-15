@@ -2,6 +2,10 @@
     background-color: $color-blue-darker;
     padding: 3.2rem 4rem;
     color: #fff;
+    background-image: url(/img/treas-seal-bg.png);
+    background-repeat: no-repeat;
+    background-position: -34% 60%;
+    background-size: 140% auto;
 
     &--title {
         margin: 0 0 0 0;
@@ -42,14 +46,45 @@
     }
 }
 
-$card-colors: ('blue', 'green', 'red', 'grey', 'gold', 'dark');
 
-@each $item in $card-colors {
-  .treas-accent-card--#{$item} {
-    background-image: url(/img/background-#{$item}.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+  .treas-accent-card--primary {
+    background-color: $color-primary;
   }
-}
 
+  .treas-accent-card--primary-darker {
+    background-color: $color-primary-darker;
+  }
+
+  .treas-accent-card--secondary {
+    background-color: $color-secondary;
+  }
+
+  .treas-accent-card--secondary-darker {
+    background-color: $color-secondary-dark;
+  }
+
+  .treas-accent-card--base {
+    background-color: #757575;
+  }
+
+  .treas-accent-card--base-darker {
+    background-color: #3D3D3D;
+  }
+
+  .treas-accent-card--red {
+    background-color: #A41E26;
+  }
+
+  .treas-accent-card--red-darker {
+    background-color: #7F2324;
+  }
+
+  .treas-accent-card--gold {
+    background-color: #C49F04;
+    text-shadow: 1px 1px 0px #000;
+  }
+
+  .treas-accent-card--gold-darker {
+    background-color: #655731;
+  }
+ 

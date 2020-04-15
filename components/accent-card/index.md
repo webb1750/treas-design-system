@@ -6,19 +6,19 @@ intro: "The Accent Card can be used to display a call to action element inside a
 jump_menu: true
 ---
 
-<div class="usdt-row usdt-section">
-  <div class="usdt-col-md-5">
+<div class="treas-row usdt-section">
+  <div class="treas-col-md-5">
     <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--blue">
+    <div class="treas-accent-card treas-accent-card--primary-darker">
       <h2 class="treas-accent-card--title">Treasury accent card!</h2>
       <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
       <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
     </div>
     <!-- /accent Card -->
   </div>
-  <div class="usdt-col-md-5">
+  <div class="treas-col-md-5">
     <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--green">
+    <div class="treas-accent-card treas-accent-card--secondary-darker">
       <h2 class="treas-accent-card--title">Treasury accent card!</h2>
       <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
       <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
@@ -40,11 +40,18 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 
-### Blue
+### Primary
 
 ```html
   <!-- Accent Card -->
-  <div class="treas-accent-card treas-accent-card--blue">
+  <div class="treas-accent-card treas-accent-card--primary">
+    <h2 class="treas-accent-card--title">My blue accent card!</h2>
+    <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
+    <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  </div>
+  <!-- /Accent Card -->
+  <!-- Accent Card -->
+  <div class="treas-accent-card treas-accent-card--primary-darker">
     <h2 class="treas-accent-card--title">My blue accent card!</h2>
     <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
     <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
@@ -52,19 +59,40 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 <div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--blue usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My blue accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  <div class="treas-row">
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--primary">
+        <h2 class="treas-accent-card--title">My blue accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
     </div>
-    <!-- /accent Card -->
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--primary-darker">
+        <h2 class="treas-accent-card--title">My blue accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
+    </div>
   </div>
+</div>
 
-### Green
+### Secondary
 ```html
   <!-- Accent Card -->
-  <div class="treas-accent-card treas-accent-card--green">
+  <div class="treas-accent-card treas-accent-card--secondary">
+    <h2 class="treas-accent-card--title">My green accent card!</h2>
+    <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
+    <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  </div>
+  <!-- /Accent Card -->
+
+  <!-- Accent Card -->
+  <div class="treas-accent-card treas-accent-card--secondary-darker">
     <h2 class="treas-accent-card--title">My green accent card!</h2>
     <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
     <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
@@ -72,19 +100,40 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 <div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--green usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My green accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  <div class="treas-row">
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--secondary">
+        <h2 class="treas-accent-card--title">My green accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
     </div>
-    <!-- /accent Card -->
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--secondary-darker">
+        <h2 class="treas-accent-card--title">My green accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
+    </div>
+  </div>
 </div>
 
-### Grey
+### Base
 ```html
   <!-- Accent Card -->
-  <div class="treas-accent-card treas-accent-card--grey">
+  <div class="treas-accent-card treas-accent-card--base">
+    <h2 class="treas-accent-card--title">My grey accent card!</h2>
+    <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
+    <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  </div>
+  <!-- /Accent Card -->
+
+  <!-- Accent Card -->
+  <div class="treas-accent-card treas-accent-card--base-darker">
     <h2 class="treas-accent-card--title">My grey accent card!</h2>
     <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
     <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
@@ -92,13 +141,26 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 <div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--grey usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My grey accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  <div class="treas-row">
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--base usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My grey accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
     </div>
-    <!-- /accent Card -->
+    <div class="treas-col-md-5">
+    <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--base-darker usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My grey accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
+    </div>
+  </div>
 </div>
 
 ### Red
@@ -112,13 +174,26 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 <div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--red usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My red accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  <div class="treas-row">
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--red usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My red accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
     </div>
-    <!-- /accent Card -->
+    <div class="treas-col-md-5">
+    <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--red-darker usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My red accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
+    </div>
+  </div>
 </div>
 
 ### Gold
@@ -132,33 +207,26 @@ The Treasury Accent Card shall use the following `class="treas-accent-card"`. Th
   <!-- /Accent Card -->
 ```
 <div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--gold usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My gold accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+  <div class="treas-row">
+    <div class="treas-col-md-5">
+      <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--gold usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My gold accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
     </div>
-    <!-- /accent Card -->
-</div>
-
-### Dark
-```html
-  <!-- Accent Card -->
-  <div class="treas-accent-card treas-accent-card--dark">
-    <h2 class="treas-accent-card--title">My dark accent card!</h2>
-    <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action.</p>
-    <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+    <div class="treas-col-md-5">
+    <!-- accent Card -->
+      <div class="treas-accent-card treas-accent-card--gold-darker usdt-col-md-5">
+        <h2 class="treas-accent-card--title">My gold accent card!</h2>
+        <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
+        <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
+      </div>
+      <!-- /accent Card -->
+    </div>
   </div>
-  <!-- /Accent Card -->
-```
-<div class="ds-preview">
-    <!-- accent Card -->
-    <div class="treas-accent-card treas-accent-card--dark usdt-col-md-5">
-      <h2 class="treas-accent-card--title">My dark accent card!</h2>
-      <p class="treas-accent-card--text">This is where a short amount of text goes to support your call to action. This card is inside a col-5.</p>
-      <a href="#" class="treas-btn treas-btn--ghost treas-accent-card--action">Call to action</a>
-    </div>
-    <!-- /accent Card -->
 </div>
 
 ## Usage

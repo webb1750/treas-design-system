@@ -1,6 +1,6 @@
 /*GRID*/
 
-.usdt-section {
+.treas-section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   &-md {
@@ -11,13 +11,13 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  &-xlg {
+  &-xlg, &-xl {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.usdt-app-section {
+.treas-app-section {
   padding: 3rem 3rem;
   &.secondary {
     background-color: $color-gray-lightest-lite;
@@ -33,19 +33,18 @@
   }
 }
 
-.usdt-app-content{
+.treas-app-content{
   align-content: flex-start !important;
   min-height: 100vh;
 }
 
 
-.usdt-grid-container, .usdt-container  {
-  max-width: 1200px;
+.usdt-grid-container, .usdt-container, .treas-container  {
+  max-width: 1440px;
   @include box-sizing;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  @include site-padding;
 
   &.wide {
     max-width: 1440px;
@@ -58,8 +57,7 @@
   max-width: none;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  @include site-padding;
   &::before, &::after {
     content: none;
   }
@@ -136,14 +134,13 @@
 }
 
 
-.usdt-row {
+.treas-row {
   @include flex($align-middle:false, $space-between:false, $no-wrap:false);
   @include box-sizing;
   flex: auto; // not sure if this is desired, but it prevents columns from shrinking when content is missing
   // flex-basis: 100%; This was necessary ensure the row breaks from a column based layout, not sure if it is still needed
   margin-left: -$grid-gutter;
   margin-right: -$grid-gutter;
-
   // Alignment of columns within a row
   &.align-bottom {
     align-items: flex-end;
@@ -226,39 +223,39 @@
     }
   }
 }
-.no-gutters > .usdt-col, .no-gutters > [class*="usdt-col-"] {
+.no-gutters > .treas-col, .no-gutters > [class*="treas-col-"] {
   padding-left:0;
   padding-right:0;
 }
-.usdt-col, *[class^="usdt-col-"], *[class*=" usdt-col-"] {
+.treas-col, *[class^="treas-col-"], *[class*=" treas-col-"] {
   position: relative;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
   width: 100%;
   min-height: 1px // prevents column from breaking if empty
 }
-.usdt-col {
+.treas-col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
 // Generate grid columns
 @for $i from 1 through $grid-columns {
-  .usdt-col-#{$i} {
+  .treas-col-#{$i} {
      flex: 0 0 100% / $grid-columns * $i;
      max-width: 100% / $grid-columns * $i;
   }
 }
 
 @media screen and (min-width: $screen-sm){
-  .usdt-col-sm-auto {
+  .treas-col-sm-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
   // Generate grid columns for small
   @for $i from 1 through $grid-columns {
-    .usdt-col-sm-#{$i} {
+    .treas-col-sm-#{$i} {
        flex: 0 0 100% / $grid-columns * $i;
        max-width: 100% / $grid-columns * $i;
     }
@@ -266,56 +263,56 @@
 }
 
 @media screen and (min-width: $screen-md){
-  .usdt-col-md-auto {
+  .treas-col-md-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
   // Generate grid columns for medium
   @for $i from 1 through $grid-columns {
-    .usdt-col-md-#{$i} {
+    .treas-col-md-#{$i} {
        flex: 0 0 100% / $grid-columns * $i;
        max-width: 100% / $grid-columns * $i;
     }
   }
 }
 @media screen and (min-width: $screen-lg){
-  .usdt-col-lg-auto {
+  .treas-col-lg-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
   // Generate grid columns for large
   @for $i from 1 through $grid-columns {
-    .usdt-col-lg-#{$i} {
+    .treas-col-lg-#{$i} {
        flex: 0 0 100% / $grid-columns * $i;
        max-width: 100% / $grid-columns * $i;
     }
   }
 }
 @media screen and (min-width: $screen-xl){
-  .usdt-col-xl-auto {
+  .treas-col-xl-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
   // Generate grid columns for extra large
   @for $i from 1 through $grid-columns {
-    .usdt-col-xl-#{$i} {
+    .treas-col-xl-#{$i} {
        flex: 0 0 100% / $grid-columns * $i;
        max-width: 100% / $grid-columns * $i;
     }
   }
 }
 @media screen and (min-width: $screen-xxl){
-  .usdt-col-xxl-auto {
+  .treas-col-xxl-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
   // Generate grid columns for extra extra large
   @for $i from 1 through $grid-columns {
-    .usdt-col-xxl-#{$i} {
+    .treas-col-xxl-#{$i} {
        flex: 0 0 100% / $grid-columns * $i;
        max-width: 100% / $grid-columns * $i;
     }
